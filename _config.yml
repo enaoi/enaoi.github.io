@@ -84,7 +84,7 @@ keywords: "enaoi, 前端"
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss:
+rss: false
 
 # Specify the date when the site was setup
 #since: 2015
@@ -215,6 +215,10 @@ font:
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 #social:
   #LinkLabel: Link
+socail:
+   GitHub: https://github.com/enaoi
+   Ins: 
+
 
 
 # Social Links Icons
@@ -229,11 +233,12 @@ social_icons:
   GitHub: github
   Twitter: twitter
   Weibo: weibo
+  Ins: instagram
 
 
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif
-#avatar:
+avatar: /assets/images/avatar.jpg
 
 
 # Table Of Contents in the Sidebar

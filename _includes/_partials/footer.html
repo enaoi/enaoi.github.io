@@ -1,4 +1,4 @@
-<div class="copyright" >
+<div class="copyright">
   {% assign current = site.time | date: '%Y' %}
   {% assign since = site.since | downcase %}
   &copy; {% if site.since and since != current %} {{ since }} - {% endif %}
@@ -15,9 +15,6 @@
 </div>
 
 <div class="theme-info">
-  {{ __.footer.theme }} -
-  <a class="theme-link" href="https://github.com/simpleyyt/jekyll-theme-next">
-    NexT.{{ site.scheme }}
-  </a>
+  {{ __.footer.theme }}
 </div>
 {% endif %}

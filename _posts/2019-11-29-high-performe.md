@@ -2,10 +2,10 @@
 title: 高性能网站建设指南
 date: 2019-11-29 15:33:10
 categories:
-- 优化
+- optimization
 tags:
-- 优化
-- 技术书籍
+- optimization
+- tech_books
 ---
 
 📚[高性能网站建设指南](https://book.douban.com/subject/3132277/)的阅读笔记

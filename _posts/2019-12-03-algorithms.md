@@ -1,12 +1,10 @@
 ---
 title: 基础算法
-date: 2019-12-03 16:25:10
+date: 2019-12-03 18:25:10
 categories:
-- algorithms
-- javascript
+- algorithm
 tags:
-- algorithms
-- javascript
+- algorithm
 ---
 算法常常是很多面试中对数组排序和查找题目的关键。
 

@@ -4,7 +4,6 @@ date: 2019-11-29 11:40:45
 categories:
 - javascript
 tags:
-- javascript
 - javascript_basic
 ---
 数据类型可以分为原始-对象类型、拥有-不拥有方法、可变-不可变几种。其中null、undefined比较特殊。

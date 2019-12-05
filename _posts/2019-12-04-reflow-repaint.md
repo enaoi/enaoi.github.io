@@ -119,12 +119,12 @@ tags:
 
 6. 谨慎取得DOM元素的布局信息
 
-    ```JavaScript
+    ```javascript
     for (var i=0; i < len; i++) {
         myElements[i].style.top = targetElement.offsetTop + i*5 + 'px';
     }
 
-    <!--如果存在重复调用，最佳的做法是尽量把这些值缓存在局部变量中-->
+    // 如果存在重复调用，最佳的做法是尽量把这些值缓存在局部变量中
 
     var targetTop = targetElement.offsetTop;
     for (var i=0; i < len; i++) {
@@ -133,14 +133,14 @@ tags:
 
     ```
 
-    ```JavaScript
+    ```javascript
     var newWidth = div1.offsetWidth + 10;
     div1.style.width = newWidth + 'px';
 
     var newHeight = myElement.offsetHeight + 10; // 强制页面重排
     myElement.style.height = newHeight + 'px'; // 又会重排一次
 
-    <!--取得DOM元素的布局信息提前，因为浏览器会优化连续的DOM操作-->
+    // 取得DOM元素的布局信息提前，因为浏览器会优化连续的DOM操作
 
     var newWidth = div1.offsetWidth + 10;
     var newHeight = myElement.offsetHeight + 10;
@@ -156,10 +156,8 @@ tags:
     ```javascript
     // 获取父节点，并添加一个click事件
     document.getElementById('list').addEventListener("click",function(e) {
-
         // 检查事件源元素
         if(e.target && e.target.nodeName.toUpperCase == "LI") {
-
             // 针对子元素的处理 ...
         }
     });

@@ -2,9 +2,9 @@
 title: Web安全问题汇总
 date: 2019-12-05 10:23:26
 categories:
-- browser
+- security
 tags:
-- browser
+- security
 ---
 web 浏览器中包含javascript解释器，也就是说，一旦载入Web页面，就可以让任意的JavaScript代码在计算机里执行。这就造成了很大的安全隐患。攻击者可能会读取或修改数据、盗取隐私、诈骗和浪费时间。
 

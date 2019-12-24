@@ -40,4 +40,11 @@ $(document).ready(function() {
   CONFIG.motion && NexT.motion.integrator.bootstrap();
 
   $(document).trigger("bootstrap:after");
+
+  emojify.run(null, function(emoji, emojiName) {
+    var span = document.createElement("span");
+    span.className = "emoji emoji-" + emojiName;
+    span.innerHTML = emoji + " replaced";
+    return span;
+  });
 });

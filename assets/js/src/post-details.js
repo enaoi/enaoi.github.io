@@ -78,6 +78,14 @@ $(document).ready(function () {
     $('.post-toc').css('max-height', height);
   }
 
+  emojify.run(null, function(emoji, emojiName) {
+    console.log(emoji,emojiName)
+    var span = document.createElement("span");
+    span.className = "emoji emoji-" + emojiName;
+    span.innerHTML = emoji + " replaced";
+    return span;
+  });
+
 });
 
 $(document).ready(function () {

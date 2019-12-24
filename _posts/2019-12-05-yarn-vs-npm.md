@@ -32,3 +32,16 @@ tags:
 | yarn licenses ls                  | 查看依赖的licenses    |
 | yarn licenses generate-disclaimer | 自动生成你的 licenses |
 | yarn why **                       | 哪些安装包依赖了**包  |
+
+## npm
+
+### 常用命令
+
+```javascript
+// 查看全局安装包
+npm ls -g --depth=1
+// 查看需要更新的全局安装包
+npm outdated -g --depth=0
+// 更新全部全局安装包
+npm update -g
+```

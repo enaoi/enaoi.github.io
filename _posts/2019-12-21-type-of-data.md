@@ -131,11 +131,11 @@ Object对象都具有：
 | typeof 1                  | "number"    | typeof new Date()   | "object" |
 | typeof undefined          | "undefined" | typeof null         | "object" |
 | typeof NaN                | "number"    | typeof new RegExp() | "object" |
-| typeof function(){}       | 🎈"function" | typeof Symbol()     | "symbol" |
+| typeof function(){}       | "function"  | typeof Symbol()     | "symbol" |
 
-👏 将其用于一个未声明的变量也不会报错。(未定义的变量和值为 undefined 的变量通过 typeof 都将返回 undefined 。)
+:clap: 将其用于一个未声明的变量也不会报错。(未定义的变量和值为 undefined 的变量通过 typeof 都将返回 undefined 。)
 
-🐛 `typeof null`  返回"object",历史bug。
+:bug: `typeof null`  返回"object",历史bug。
 
 ### 2. instanceof — 检测引用值
 
@@ -152,9 +152,9 @@ console.log(now instanceof Object); //true
 
 ```
 
-👏 javaScript中检测自定义类型最好的做法就是使用 instanceof 运算符，这也是唯一的方法。
+:clap: javaScript中检测自定义类型最好的做法就是使用 instanceof 运算符，这也是唯一的方法。
 
-💣 默认情况下，每个对象都继承自Object。`value instanceof Object` 都为true。
+:bomb: 默认情况下，每个对象都继承自Object。`value instanceof Object` 都为true。
 
 ### 3. Object.proptotype.toString.call(value)
 
@@ -202,9 +202,9 @@ if(object["count"]){ //这里的代码不会执行 }
 if(object["related"] != null){//...}
 ```
 
-👏  in 运算符可以解决，通过`.`或`[]` 运算符获取值并判断，当属性值为假值的时候，会出现错误的问题。如：0，false，""， null，undefined。
+:clap:  in 运算符可以解决，通过`.`或`[]` 运算符获取值并判断，当属性值为假值的时候，会出现错误的问题。如：0，false，""， null，undefined。
 
-💣 `in` 运算符的一个问题是，它不能识别哪些属性是对象自身的，哪些属性是继承的。
+:bomb: `in` 运算符的一个问题是，它不能识别哪些属性是对象自身的，哪些属性是继承的。
 
 如果你只想检查实例对象的某个属性是否存在，则使用`hasOwnProperty()` 方法。
 
@@ -231,7 +231,7 @@ for (prop in enkyoku) {
 // 打印 name 和 age。 而不会打印出  getName
 ```
 
-🐛 但在IE8及早期IE浏览器中，DOM对象并非继承自Object，所以不含有这个方法。
+:bug: 但在IE8及早期IE浏览器中，DOM对象并非继承自Object，所以不含有这个方法。
 
 ```javascript
 //对于所有非DOM对象来说，最好的写法
@@ -262,7 +262,7 @@ js 在底层存储变量的时候，会在变量的机器码低位的1-3位存�
 
 - `undefined`：用 −2^30 整数来表示
 
-🐛所以，`typeof` 在判断 `null` 的时候，由于 `null` 的所有机器码均为0，因此直接被当做了对象来看待。
+:bug: 所以，`typeof` 在判断 `null` 的时候，由于 `null` 的所有机器码均为0，因此直接被当做了对象来看待。
 
 然而用 `instanceof` 来判断的话👉
 

@@ -2,9 +2,9 @@
 title: 浏览器URL处理以及javascript加载和执行时间线
 date: 2019-12-04 16:28:44
 categories:
-- javascript
+- browser
 tags:
-- javascript_basic
+- browser
 ---
 当你在浏览器地址栏输入url，敲击回车后，发生了什么？文档返回后，浏览器如何执行脚本？
 
@@ -129,10 +129,106 @@ $(document).ready(function () {
 // window onload
 ```
 
-🎈points:
+## 如何计算渲染时间
+
+`window.performance` 包含了浏览器加载阶段各种信息。
+页面加载过程中的各个时间环顺序：
+![performanc timing](/images/performanc_timing.png)
+
+```javascript
+const data = {
+  timeOrigin: 1577341568983.8718,
+  // 只有chrome浏览器有
+  memory: {
+    totalJSHeapSize: 19412842,
+    usedJSHeapSize: 17133522,
+    jsHeapSizeLimit: 2197815296
+  },
+  navigation: {
+    // 0 正常进入页面
+    // 1 通过 window.location.reload() 刷新页面
+    // 2 通过浏览器的前进后退按钮进入页面
+    // 255 非以上方式进入的页面
+    type: 0,
+    // 页面经过几次重定向跳转而来
+    redirectCount: 0
+  },
+  timing: {
+    // 在同一个浏览器上下文中，前一个网页unload的时间戳，如果无前一个网页的unload，则与fetchStart相等
+    navigationStart: 1577341568983,
+    // 与当前页面同域名的钱一个网页的unload的时间戳，其它都为0
+    unloadEventStart: 0,
+    unloadEventEnd: 0,
+    // 第一个HTTP重定向发生时的时间。有跳转且是同域名的重定向才算，否则值为0
+    redirectStart: 0,
+    redirectEnd: 0,
+    // 浏览器准备好使用 http 请求抓取文档的时间，这发生在检查本地缓存之前
+    fetchStart: 1577341568993,
+    // DNS 域名查询开始。如果使用了本地缓存(即无 DNS 查询)或持久连接，则与 fetchStart 值相等
+    domainLookupStart: 1577341568993,
+    domainLookupEnd: 1577341568993,
+    // HTTP(TCP) 开始建立连接的时间，如果是持久连接，则与 fetchStart 相等
+    connectStart: 1577341568993,
+    // 完成三次握手
+    connectEnd: 1577341568993,
+    secureConnectionStart: 0,
+    // HTTP 请求读取真实文档开始时间，包括从本地读取缓存
+    requestStart: 1577341568995,
+    // HTTP 接收响应开始的时间，包括从本地读取缓存
+    responseStart: 1577341568996,
+    responseEnd: 1577341568998,
+    // 开始解析渲染 DOM 树时间， 此时 document.readyState变为 loading ,并抛出 readystatechange 相关事件
+    domLoading: 1577341569004,
+    // 完成解析 DOM 树, document.readyState 变为 interactive
+    domInteractive: 1577341569195,
+    // domCotentLoaded事件抛出之前
+    domContentLoadedEventStart: 1577341569195,
+    // domContentLoaded事件抛出之后
+    domContentLoadedEventEnd: 1577341569197,
+    // document.readyState 状态变为 complete
+    domComplete: 1577341569205,
+    // load 时间发送给文档，如果没有绑定load事件，值为0
+    loadEventStart: 1577341569205,
+    // load 事件的回调函数执行完毕
+    loadEventEnd: 1577341569205
+  }
+};
+```
+
+各类指标计算：
+
+```javascript
+times.loadPage = t.loadEventEnd - t.navigationStart
+// 解析 DOM 结构
+times.domReady = t.domComplete - t.responseEnd
+//【重要】读取页面第一个字节的时间
+//【原因】这可以理解为用户拿到你的资源占用的时间，加异地机房了么，加CDN 处理了么？加带宽了么？加 CPU 运算速度了么？
+// TTFB 即 Time To First Byte 的意思
+// 维基百科：https://en.wikipedia.org/wiki/Time_To_First_Byte
+times.ttfb = t.responseStart - t.navigationStart;
+
+//【重要】内容加载完成的时间
+//【原因】页面内容经过 gzip 压缩了么，静态资源 css/js 等压缩了么？
+times.request = t.responseEnd - t.requestStart;
+
+//【重要】执行 onload 回调函数的时间
+//【原因】是否太多不必要的操作都放到 onload 回调函数里执行了，考虑过延迟加载、按需加载的策略么？
+times.loadEvent = t.loadEventEnd - t.loadEventStart;
+
+// DNS 缓存时间
+times.appcache = t.domainLookupStart - t.fetchStart;
+
+// 卸载页面的时间
+times.unloadEvent = t.unloadEventEnd - t.unloadEventStart;
+
+// TCP 建立连接完成握手的时间
+times.connect = t.connectEnd - t.connectStart;
+```
+
+:star2: points:
 
 - url解析中的DNS原理
 - http和https协议
 - 浏览器缓存的判断和清理
-- jquery的ready事件，window的load事件和`DOMContentLoaded`事件的顺序
+- jquery的ready事件，window的load事件`DOMContentLoaded`事件的顺序
 - 浏览器渲染引擎机制

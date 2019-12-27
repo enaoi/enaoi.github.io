@@ -1,5 +1,5 @@
 ---
-title: Object的那些个方法
+title: Object
 date: 2019-12-12 14:48:26
 categories:
 - javascript
@@ -77,8 +77,6 @@ Object.defineProperties(obj, {
 创建一个新对象，使用现有的对象来提供新创建的对象的__proto__
 `Object.create(proto[, propertiesObject])`
 
-- `Object.create(null)` 建一个原型为null的空对象,也就是它不会有任何继承的方法和属性。
-
 ```javascript
 Object.create = Object.create || function(obj){
     var F = function(){};
@@ -86,6 +84,8 @@ Object.create = Object.create || function(obj){
     return new F();
 }
 ```
+
+`Object.create(null)` 会创建一个拥有空 prototype 链接的对象，这个对象无法进行委托。由于这个对象没有原型链，所以 `instanceof` 操作符（之前解释过）无法进行判断，因此总是会返回 false。这些特殊的空 prototype 对象通常被称作“字典”，它们完全不会受到原型链的干扰，因此非常适合用来存储数据。
 
 ## Object.assign
 

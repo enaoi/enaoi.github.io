@@ -57,16 +57,15 @@ null === undefined  // false
 1. 超出`Number.MAX_VALUE`将会被标记为 `Infinity`，小于`Number.MIN_VALUE`的值将会被标记为 `-Infinity`。
 2. 可以通过`isFinite()`函数判断一个数值是不是有穷的。
 
-```javascript
-Number.MAX_VALUE // 1.7976931348623157e+308
-Number.MIN_VALUE // 5e-324
-Number.MAX_SAFE_INTEGER // 2^53-1 9007199254740991
-Number.MIN_SAFE_INTEGER // -(2^53-1) -9007199254740991
-```
+    ```javascript
+    Number.MAX_VALUE // 1.7976931348623157e+308
+    Number.MIN_VALUE // 5e-324
+    Number.MAX_SAFE_INTEGER // 2^53-1 9007199254740991
+    Number.MIN_SAFE_INTEGER // -(2^53-1) -9007199254740991
+    ```
 
 3. 什么是安全值？超出安全值的数如何运算？
 4. 判断是否是安全值 `Number.isSafeInteger()`
-
 
 #### NaN
 

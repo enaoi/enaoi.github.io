@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>koa实现跨域请求 | enaoi&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="vue、react、webpack...，everything about front development.">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="preload" href="/assets/css/0.styles.d4b5313e.css" as="style"><link rel="preload" href="/assets/js/app.8a428542.js" as="script"><link rel="preload" href="/assets/js/2.fba25c7e.js" as="script"><link rel="preload" href="/assets/js/52.8c11de57.js" as="script"><link rel="prefetch" href="/assets/js/10.976ed631.js"><link rel="prefetch" href="/assets/js/11.320018ad.js"><link rel="prefetch" href="/assets/js/12.ab97ae7b.js"><link rel="prefetch" href="/assets/js/13.bc63fc14.js"><link rel="prefetch" href="/assets/js/14.7b6a04d5.js"><link rel="prefetch" href="/assets/js/15.461412da.js"><link rel="prefetch" href="/assets/js/16.400017f8.js"><link rel="prefetch" href="/assets/js/17.12d37a24.js"><link rel="prefetch" href="/assets/js/18.b5669728.js"><link rel="prefetch" href="/assets/js/19.d74bf577.js"><link rel="prefetch" href="/assets/js/20.183dfa91.js"><link rel="prefetch" href="/assets/js/21.01dc63fa.js"><link rel="prefetch" href="/assets/js/22.34e17f4d.js"><link rel="prefetch" href="/assets/js/23.5e0a77f4.js"><link rel="prefetch" href="/assets/js/24.da6ee156.js"><link rel="prefetch" href="/assets/js/25.e667d069.js"><link rel="prefetch" href="/assets/js/26.ba4565a6.js"><link rel="prefetch" href="/assets/js/27.f4e81e72.js"><link rel="prefetch" href="/assets/js/28.d557e152.js"><link rel="prefetch" href="/assets/js/29.89386053.js"><link rel="prefetch" href="/assets/js/3.e736950e.js"><link rel="prefetch" href="/assets/js/30.f3f4c533.js"><link rel="prefetch" href="/assets/js/31.a2bf137e.js"><link rel="prefetch" href="/assets/js/32.5846927f.js"><link rel="prefetch" href="/assets/js/33.44c21122.js"><link rel="prefetch" href="/assets/js/34.ea43ccbb.js"><link rel="prefetch" href="/assets/js/35.5901008e.js"><link rel="prefetch" href="/assets/js/36.f03939a4.js"><link rel="prefetch" href="/assets/js/37.1214e00c.js"><link rel="prefetch" href="/assets/js/38.0d625f65.js"><link rel="prefetch" href="/assets/js/39.10f8ff73.js"><link rel="prefetch" href="/assets/js/4.f5601869.js"><link rel="prefetch" href="/assets/js/40.4aa05f26.js"><link rel="prefetch" href="/assets/js/41.90c52b60.js"><link rel="prefetch" href="/assets/js/42.26e20d0e.js"><link rel="prefetch" href="/assets/js/43.7e76b852.js"><link rel="prefetch" href="/assets/js/44.738af55b.js"><link rel="prefetch" href="/assets/js/45.5fad7697.js"><link rel="prefetch" href="/assets/js/46.78a5a115.js"><link rel="prefetch" href="/assets/js/47.74259228.js"><link rel="prefetch" href="/assets/js/48.1915020c.js"><link rel="prefetch" href="/assets/js/49.1e4effcb.js"><link rel="prefetch" href="/assets/js/5.f4c90bdc.js"><link rel="prefetch" href="/assets/js/50.d9cd2002.js"><link rel="prefetch" href="/assets/js/51.a54ed68d.js"><link rel="prefetch" href="/assets/js/53.ca0f9d97.js"><link rel="prefetch" href="/assets/js/54.c9976fde.js"><link rel="prefetch" href="/assets/js/55.b15d45bb.js"><link rel="prefetch" href="/assets/js/56.a9092362.js"><link rel="prefetch" href="/assets/js/57.ccdd8423.js"><link rel="prefetch" href="/assets/js/58.617b85d7.js"><link rel="prefetch" href="/assets/js/59.2a372c03.js"><link rel="prefetch" href="/assets/js/6.7170030e.js"><link rel="prefetch" href="/assets/js/60.c7848271.js"><link rel="prefetch" href="/assets/js/61.d9c204a2.js"><link rel="prefetch" href="/assets/js/62.67c3b938.js"><link rel="prefetch" href="/assets/js/63.d89da0c2.js"><link rel="prefetch" href="/assets/js/64.b2f56db9.js"><link rel="prefetch" href="/assets/js/65.ade1836b.js"><link rel="prefetch" href="/assets/js/66.01a5a1b5.js"><link rel="prefetch" href="/assets/js/67.c22c25c5.js"><link rel="prefetch" href="/assets/js/68.fe98acd3.js"><link rel="prefetch" href="/assets/js/69.323a5168.js"><link rel="prefetch" href="/assets/js/7.c26de8d1.js"><link rel="prefetch" href="/assets/js/70.8b90a729.js"><link rel="prefetch" href="/assets/js/71.05ff2bbf.js"><link rel="prefetch" href="/assets/js/72.794de199.js"><link rel="prefetch" href="/assets/js/73.2fa5e11f.js"><link rel="prefetch" href="/assets/js/74.9a29b78b.js"><link rel="prefetch" href="/assets/js/75.a4b1869d.js"><link rel="prefetch" href="/assets/js/76.665d178b.js"><link rel="prefetch" href="/assets/js/77.32c93c4e.js"><link rel="prefetch" href="/assets/js/78.be5f9669.js"><link rel="prefetch" href="/assets/js/79.c604a81e.js"><link rel="prefetch" href="/assets/js/8.b0447022.js"><link rel="prefetch" href="/assets/js/80.7097bba0.js"><link rel="prefetch" href="/assets/js/81.7f7b8af8.js"><link rel="prefetch" href="/assets/js/82.ca008ebf.js"><link rel="prefetch" href="/assets/js/9.dfda25f6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d4b5313e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">enaoi's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/libs/" class="nav-link">
+  库
+</a></li><li class="dropdown-item"><!----> <a href="/http/" class="nav-link">
+  Http
+</a></li><li class="dropdown-item"><!----> <a href="/tools/" class="nav-link">
+  Tools
+</a></li><li class="dropdown-item"><!----> <a href="/datastructures/" class="nav-link">
+  数据结构
+</a></li></ul></div></div><div class="nav-item"><a href="/css/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生态系统" class="dropdown-title"><span class="title">生态系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          MVVM框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/angular/" class="nav-link">
+  angular
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Node
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/nodejs/" class="nav-link">
+  nodejs
+</a></li><li class="dropdown-subitem"><a href="/koa/" class="nav-link router-link-active">
+  koa
+</a></li><li class="dropdown-subitem"><a href="/express.html" class="nav-link">
+  express
+</a></li></ul></li><li class="dropdown-item"><h4>
+          打包
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-subitem"><a href="/vite/" class="nav-link">
+  vite
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="阅读" class="dropdown-title"><span class="title">阅读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/books/" class="nav-link">
+  技术类
+</a></li><li class="dropdown-item"><!----> <a href="/reading/" class="nav-link">
+  文学类
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/git/" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/vscode/" class="nav-link">
+  vscode
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/" class="nav-link">
+  计算机
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/enaoi" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/libs/" class="nav-link">
+  库
+</a></li><li class="dropdown-item"><!----> <a href="/http/" class="nav-link">
+  Http
+</a></li><li class="dropdown-item"><!----> <a href="/tools/" class="nav-link">
+  Tools
+</a></li><li class="dropdown-item"><!----> <a href="/datastructures/" class="nav-link">
+  数据结构
+</a></li></ul></div></div><div class="nav-item"><a href="/css/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生态系统" class="dropdown-title"><span class="title">生态系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          MVVM框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/angular/" class="nav-link">
+  angular
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Node
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/nodejs/" class="nav-link">
+  nodejs
+</a></li><li class="dropdown-subitem"><a href="/koa/" class="nav-link router-link-active">
+  koa
+</a></li><li class="dropdown-subitem"><a href="/express.html" class="nav-link">
+  express
+</a></li></ul></li><li class="dropdown-item"><h4>
+          打包
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-subitem"><a href="/vite/" class="nav-link">
+  vite
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="阅读" class="dropdown-title"><span class="title">阅读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/books/" class="nav-link">
+  技术类
+</a></li><li class="dropdown-item"><!----> <a href="/reading/" class="nav-link">
+  文学类
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/git/" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/vscode/" class="nav-link">
+  vscode
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/" class="nav-link">
+  计算机
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/enaoi" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/koa/" aria-current="page" class="sidebar-link">前言</a></li><li><a href="/koa/01_start.html" class="sidebar-link">基础</a></li><li><a href="/koa/02_cookie.html" class="sidebar-link">Cookie 操作</a></li><li><a href="/koa/03_session.html" class="sidebar-link">Session 操作</a></li><li><a href="/koa/04_cros.html" aria-current="page" class="active sidebar-link">koa实现跨域请求</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="koa实现跨域请求"><a href="#koa实现跨域请求" class="header-anchor">#</a> koa实现跨域请求</h1> <ul><li>已有库 <a href="https://github.com/koajs/cors" target="_blank" rel="noopener noreferrer">koa-cors<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li>http <a href="https://cloud.tencent.com/developer/section/1189824" target="_blank" rel="noopener noreferrer">cors<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://www.jianshu.com/p/5b3acded5182" target="_blank" rel="noopener noreferrer">koa-cors解析<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">// 可以参考 koa-cros 的源码</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token punctuation">(</span>ctx<span class="token operator">:</span> BaseContext<span class="token punctuation">,</span> next<span class="token operator">:</span> Next<span class="token punctuation">)</span><span class="token parameter"> </span><span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 允许来自所有域名的请求</span>
+  ctx<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'Access-Control-Allow-Origin'</span><span class="token punctuation">,</span> <span class="token string">'*'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// 字段是必需的。它也是一个逗号分隔的字符串，表明服务器支持的所有头信息字段.</span>
+  ctx<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">&quot;Access-Control-Allow-Headers&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;x-requested-with, accept, origin, content-type&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// 该字段可选。它的值是一个布尔值，表示是否允许发送Cookie。默认情况下，Cookie不包括在CORS请求之中。</span>
+  <span class="token comment">// 当设置成允许请求携带cookie时，需要保证&quot;Access-Control-Allow-Origin&quot;是服务器有的域名，而不能是&quot;*&quot;;</span>
+  ctx<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'Access-Control-Allow-Credentials'</span><span class="token punctuation">,</span> <span class="token string">'true'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// Content-Type表示具体请求中的媒体类型信息</span>
+  ctx<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'Content-Type'</span><span class="token punctuation">,</span> <span class="token string">'application/json;charset=utf-8'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// 该字段可选，用来指定本次预检请求的有效期，单位为秒。</span>
+  <span class="token comment">// 当请求方法是PUT或DELETE等特殊方法或者Content-Type字段的类型是application/json时，服务器会提前发送一次请求进行验证</span>
+  <span class="token comment">// 下面的的设置只本次验证的有效时间，即在该时间段内服务端可以不用进行验证</span>
+  ctx<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">'Access-Control-Max-Age'</span><span class="token punctuation">,</span> <span class="token string">'300'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">/*
+    CORS请求时，XMLHttpRequest对象的getResponseHeader()方法只能拿到6个基本字段：
+      Cache-Control、
+      Content-Language、
+      Content-Type、
+      Expires、
+      Last-Modified、
+      Pragma。
+  */</span>
+  <span class="token comment">// 需要获取其他字段时，比如token，必须使用Access-Control-Expose-Headers</span>
+  <span class="token comment">// getResponseHeader('token')可以返回我们所需的值</span>
+  <span class="token comment">// ctx.set(&quot;Access-Control-Expose-Headers&quot;, &quot;token&quot;);</span>
+  <span class="token keyword">return</span><span class="token function"> next</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新于:</span> <span class="time">9/2/2020, 11:54:12 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/koa/03_session.html" class="prev">
+        Session 操作
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.8a428542.js" defer></script><script src="/assets/js/2.fba25c7e.js" defer></script><script src="/assets/js/52.8c11de57.js" defer></script>
+  </body>
+</html>

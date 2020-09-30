@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue3 | enaoi&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="vue、react、webpack...，everything about front development.">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="preload" href="/assets/css/0.styles.d4b5313e.css" as="style"><link rel="preload" href="/assets/js/app.8a428542.js" as="script"><link rel="preload" href="/assets/js/2.fba25c7e.js" as="script"><link rel="preload" href="/assets/js/75.a4b1869d.js" as="script"><link rel="prefetch" href="/assets/js/10.976ed631.js"><link rel="prefetch" href="/assets/js/11.320018ad.js"><link rel="prefetch" href="/assets/js/12.ab97ae7b.js"><link rel="prefetch" href="/assets/js/13.bc63fc14.js"><link rel="prefetch" href="/assets/js/14.7b6a04d5.js"><link rel="prefetch" href="/assets/js/15.461412da.js"><link rel="prefetch" href="/assets/js/16.400017f8.js"><link rel="prefetch" href="/assets/js/17.12d37a24.js"><link rel="prefetch" href="/assets/js/18.b5669728.js"><link rel="prefetch" href="/assets/js/19.d74bf577.js"><link rel="prefetch" href="/assets/js/20.183dfa91.js"><link rel="prefetch" href="/assets/js/21.01dc63fa.js"><link rel="prefetch" href="/assets/js/22.34e17f4d.js"><link rel="prefetch" href="/assets/js/23.5e0a77f4.js"><link rel="prefetch" href="/assets/js/24.da6ee156.js"><link rel="prefetch" href="/assets/js/25.e667d069.js"><link rel="prefetch" href="/assets/js/26.ba4565a6.js"><link rel="prefetch" href="/assets/js/27.f4e81e72.js"><link rel="prefetch" href="/assets/js/28.d557e152.js"><link rel="prefetch" href="/assets/js/29.89386053.js"><link rel="prefetch" href="/assets/js/3.e736950e.js"><link rel="prefetch" href="/assets/js/30.f3f4c533.js"><link rel="prefetch" href="/assets/js/31.a2bf137e.js"><link rel="prefetch" href="/assets/js/32.5846927f.js"><link rel="prefetch" href="/assets/js/33.44c21122.js"><link rel="prefetch" href="/assets/js/34.ea43ccbb.js"><link rel="prefetch" href="/assets/js/35.5901008e.js"><link rel="prefetch" href="/assets/js/36.f03939a4.js"><link rel="prefetch" href="/assets/js/37.1214e00c.js"><link rel="prefetch" href="/assets/js/38.0d625f65.js"><link rel="prefetch" href="/assets/js/39.10f8ff73.js"><link rel="prefetch" href="/assets/js/4.f5601869.js"><link rel="prefetch" href="/assets/js/40.4aa05f26.js"><link rel="prefetch" href="/assets/js/41.90c52b60.js"><link rel="prefetch" href="/assets/js/42.26e20d0e.js"><link rel="prefetch" href="/assets/js/43.7e76b852.js"><link rel="prefetch" href="/assets/js/44.738af55b.js"><link rel="prefetch" href="/assets/js/45.5fad7697.js"><link rel="prefetch" href="/assets/js/46.78a5a115.js"><link rel="prefetch" href="/assets/js/47.74259228.js"><link rel="prefetch" href="/assets/js/48.1915020c.js"><link rel="prefetch" href="/assets/js/49.1e4effcb.js"><link rel="prefetch" href="/assets/js/5.f4c90bdc.js"><link rel="prefetch" href="/assets/js/50.d9cd2002.js"><link rel="prefetch" href="/assets/js/51.a54ed68d.js"><link rel="prefetch" href="/assets/js/52.8c11de57.js"><link rel="prefetch" href="/assets/js/53.ca0f9d97.js"><link rel="prefetch" href="/assets/js/54.c9976fde.js"><link rel="prefetch" href="/assets/js/55.b15d45bb.js"><link rel="prefetch" href="/assets/js/56.a9092362.js"><link rel="prefetch" href="/assets/js/57.ccdd8423.js"><link rel="prefetch" href="/assets/js/58.617b85d7.js"><link rel="prefetch" href="/assets/js/59.2a372c03.js"><link rel="prefetch" href="/assets/js/6.7170030e.js"><link rel="prefetch" href="/assets/js/60.c7848271.js"><link rel="prefetch" href="/assets/js/61.d9c204a2.js"><link rel="prefetch" href="/assets/js/62.67c3b938.js"><link rel="prefetch" href="/assets/js/63.d89da0c2.js"><link rel="prefetch" href="/assets/js/64.b2f56db9.js"><link rel="prefetch" href="/assets/js/65.ade1836b.js"><link rel="prefetch" href="/assets/js/66.01a5a1b5.js"><link rel="prefetch" href="/assets/js/67.c22c25c5.js"><link rel="prefetch" href="/assets/js/68.fe98acd3.js"><link rel="prefetch" href="/assets/js/69.323a5168.js"><link rel="prefetch" href="/assets/js/7.c26de8d1.js"><link rel="prefetch" href="/assets/js/70.8b90a729.js"><link rel="prefetch" href="/assets/js/71.05ff2bbf.js"><link rel="prefetch" href="/assets/js/72.794de199.js"><link rel="prefetch" href="/assets/js/73.2fa5e11f.js"><link rel="prefetch" href="/assets/js/74.9a29b78b.js"><link rel="prefetch" href="/assets/js/76.665d178b.js"><link rel="prefetch" href="/assets/js/77.32c93c4e.js"><link rel="prefetch" href="/assets/js/78.be5f9669.js"><link rel="prefetch" href="/assets/js/79.c604a81e.js"><link rel="prefetch" href="/assets/js/8.b0447022.js"><link rel="prefetch" href="/assets/js/80.7097bba0.js"><link rel="prefetch" href="/assets/js/81.7f7b8af8.js"><link rel="prefetch" href="/assets/js/82.ca008ebf.js"><link rel="prefetch" href="/assets/js/9.dfda25f6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d4b5313e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">enaoi's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/libs/" class="nav-link">
+  库
+</a></li><li class="dropdown-item"><!----> <a href="/http/" class="nav-link">
+  Http
+</a></li><li class="dropdown-item"><!----> <a href="/tools/" class="nav-link">
+  Tools
+</a></li><li class="dropdown-item"><!----> <a href="/datastructures/" class="nav-link">
+  数据结构
+</a></li></ul></div></div><div class="nav-item"><a href="/css/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生态系统" class="dropdown-title"><span class="title">生态系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          MVVM框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/" class="nav-link router-link-active">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/angular/" class="nav-link">
+  angular
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Node
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/nodejs/" class="nav-link">
+  nodejs
+</a></li><li class="dropdown-subitem"><a href="/koa/" class="nav-link">
+  koa
+</a></li><li class="dropdown-subitem"><a href="/express.html" class="nav-link">
+  express
+</a></li></ul></li><li class="dropdown-item"><h4>
+          打包
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-subitem"><a href="/vite/" class="nav-link">
+  vite
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="阅读" class="dropdown-title"><span class="title">阅读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/books/" class="nav-link">
+  技术类
+</a></li><li class="dropdown-item"><!----> <a href="/reading/" class="nav-link">
+  文学类
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/git/" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/vscode/" class="nav-link">
+  vscode
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/" class="nav-link">
+  计算机
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/enaoi" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/libs/" class="nav-link">
+  库
+</a></li><li class="dropdown-item"><!----> <a href="/http/" class="nav-link">
+  Http
+</a></li><li class="dropdown-item"><!----> <a href="/tools/" class="nav-link">
+  Tools
+</a></li><li class="dropdown-item"><!----> <a href="/datastructures/" class="nav-link">
+  数据结构
+</a></li></ul></div></div><div class="nav-item"><a href="/css/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生态系统" class="dropdown-title"><span class="title">生态系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          MVVM框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/" class="nav-link router-link-active">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/angular/" class="nav-link">
+  angular
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Node
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/nodejs/" class="nav-link">
+  nodejs
+</a></li><li class="dropdown-subitem"><a href="/koa/" class="nav-link">
+  koa
+</a></li><li class="dropdown-subitem"><a href="/express.html" class="nav-link">
+  express
+</a></li></ul></li><li class="dropdown-item"><h4>
+          打包
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-subitem"><a href="/vite/" class="nav-link">
+  vite
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="阅读" class="dropdown-title"><span class="title">阅读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/books/" class="nav-link">
+  技术类
+</a></li><li class="dropdown-item"><!----> <a href="/reading/" class="nav-link">
+  文学类
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/git/" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/vscode/" class="nav-link">
+  vscode
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/" class="nav-link">
+  计算机
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/enaoi" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/vue/" aria-current="page" class="sidebar-link">Vue.js 基础</a></li><li><a href="/vue/vue3.html" aria-current="page" class="active sidebar-link">vue3</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vue/vue3.html#安装" class="sidebar-link">安装</a></li><li class="sidebar-sub-header"><a href="/vue/vue3.html#动机和目的" class="sidebar-link">动机和目的</a></li><li class="sidebar-sub-header"><a href="/vue/vue3.html#学习" class="sidebar-link">学习</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vue/vue3.html#setup" class="sidebar-link">setup</a></li><li class="sidebar-sub-header"><a href="/vue/vue3.html#响应式api" class="sidebar-link">响应式API</a></li><li class="sidebar-sub-header"><a href="/vue/vue3.html#生命周期钩子函数" class="sidebar-link">生命周期钩子函数</a></li><li class="sidebar-sub-header"><a href="/vue/vue3.html#依赖注入" class="sidebar-link">依赖注入</a></li><li class="sidebar-sub-header"><a href="/vue/vue3.html#模板refs-dom引用" class="sidebar-link">模板Refs-DOM引用</a></li><li class="sidebar-sub-header"><a href="/vue/vue3.html#响应式系统工具集" class="sidebar-link">响应式系统工具集</a></li><li class="sidebar-sub-header"><a href="/vue/vue3.html#高级响应系统api" class="sidebar-link">高级响应系统API</a></li></ul></li><li class="sidebar-sub-header"><a href="/vue/vue3.html#其它" class="sidebar-link">其它</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vue/vue3.html#ref-2" class="sidebar-link">Ref</a></li><li class="sidebar-sub-header"><a href="/vue/vue3.html#ref-vs-rreactive" class="sidebar-link">Ref vs Rreactive</a></li></ul></li></ul></li><li><a href="/vue/vue_axios.html" class="sidebar-link">vue + axios</a></li><li><a href="/vue/vue_cli.html" class="sidebar-link">vue-cli</a></li><li><a href="/vue/vue_component.html" class="sidebar-link">vue 组件</a></li><li><a href="/vue/vue_router.html" class="sidebar-link">vue_router</a></li><li><a href="/vue/vue_theory.html" class="sidebar-link">vue 原理</a></li><li><a href="/vue/vuex.html" class="sidebar-link">vuex</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue3"><a href="#vue3" class="header-anchor">#</a> vue3</h1> <blockquote><p><a href="https://github.com/vuejs/vue-next" target="_blank" rel="noopener noreferrer">vue-next<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> ： Repo for Vue 3.0 (currently in beta)</p> <p><a href="https://vue-composition-api-rfc.netlify.app/" target="_blank" rel="noopener noreferrer">rfc文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> ： vue3的动机，构建思想和API参考</p></blockquote> <h2 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h2> <p>在 <code>vue-cli</code> 已经新建好的项目内执行</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>vue <span class="token function">add</span> vue-next
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="动机和目的"><a href="#动机和目的" class="header-anchor">#</a> 动机和目的</h2> <p>目前的缺陷：</p> <ol><li>功能增长，复杂组件越来越庞大</li> <li>缺少低成本复用和提取组件之间的逻辑</li> <li>对于TypeScript的支持有限</li></ol> <p>相对于 mixins、高阶组件或者是插槽实现的模式的缺点：</p> <ul><li>渲染上下文暴露的 property 来源不清晰，看不出属性是哪个 mixin 注入的。</li> <li>命名空间冲突</li> <li>高阶组件和无渲染组件需要额外的有状态组件实例，性能有所消耗</li></ul> <h2 id="学习"><a href="#学习" class="header-anchor">#</a> 学习</h2> <h3 id="setup"><a href="#setup" class="header-anchor">#</a> setup</h3> <p><strong>调用时机</strong>: 创建组件实例 =&gt; 初始化<code>props</code> =&gt; 调用<code>setup</code>函数 =&gt; <code>beforeCreate</code>钩子。</p> <p><strong>使用</strong>:</p> <ol><li>返回一个对象，该对象的属性自动合并到组件模板的上下文。</li> <li>返回一个渲染函数。</li></ol> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> h<span class="token punctuation">,</span> ref<span class="token punctuation">,</span> reactive <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">setup</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> count <span class="token operator">=</span> <span class="token function">ref</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> object <span class="token operator">=</span> <span class="token function">reactive</span><span class="token punctuation">(</span><span class="token punctuation">{</span> foo<span class="token operator">:</span> <span class="token string">'bar'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token comment">// 返回一个对象</span>
+    <span class="token comment">// return { count, object }</span>
+    <span class="token comment">// 返回一个渲染函数</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">h</span><span class="token punctuation">(</span>'div’<span class="token punctuation">,</span> <span class="token punctuation">[</span>count<span class="token punctuation">.</span>value<span class="token punctuation">,</span> object<span class="token punctuation">.</span>foo<span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p><strong>参数</strong>:</p> <ol><li><p><code>props</code></p> <ul><li><code>props</code> 对象是响应式的。<code>watchEffect</code> 和 <code>watch</code> 会观察和响应 <code>props</code> 的更新。</li> <li>不要解构 <code>props</code>，会使其失去响应性</li> <li><code>props</code>对象不可变</li></ul></li> <li><p><code>context</code>: 上下文对象</p> <ul><li><code>context.attrs</code></li> <li><code>context.slots</code></li> <li><code>context.emit</code></li></ul></li></ol> <p><strong>其它</strong>：</p> <ul><li><code>this</code> 在 <code>setup</code> 中不可用。</li></ul> <h3 id="响应式api"><a href="#响应式api" class="header-anchor">#</a> 响应式API</h3> <h4 id="reactive"><a href="#reactive" class="header-anchor">#</a> reactive</h4> <p><code>const obj = reactive({count: 0})</code>: 接受一个普通对象后返回该对象的响应式代理。等同于<code>Vue.observable()</code>。该响应式转换是“deep”的，会影响对象内所有嵌套的属性。基于ES2015的proxy实现，返回的代理对象不等于原始对象。</p> <h4 id="ref"><a href="#ref" class="header-anchor">#</a> ref</h4> <p><code>cont count = ref(0)</code> 接受一个参数值并返回一个响应式且可改变的ref对象。ref对象拥有一个指向内部的单一属性<code>.value</code></p> <ul><li>如果传入ref的是一个对象，将会调用<code>reactive</code>方法进行深层响应转化。</li> <li>作为渲染上下文的属性返回，<code>setup</code>函数会自动解套，无需书写<code>.value</code></li> <li>只有嵌套在<code>reactive</code>的<code>Object</code>中时，ref才会解套。Array 和 Map 不会解套</li></ul> <p>JavaScript 中基础类型是值传递而非引用传递。一个响应式的值一旦作为 property 被赋值或从一个函数返回，而失去了响应性之后，也就失去了用途。为了确保始终可以读取到最新的计算结果，我们需要将这个值上包裹到一个对象中再返回。</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">// 伪代码</span>
+<span class="token keyword">const</span> ref <span class="token operator">=</span> <span class="token punctuation">{</span>
+    value<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>同样需要劫持对这个对象 .value property 的读/写操作，来实现依赖收集与更新通知</p> <h4 id="computed"><a href="#computed" class="header-anchor">#</a> computed</h4> <ul><li>传入一个<code>get</code>函数，返回一个默认不可修改的ref对象</li> <li>传入<code>get</code>和<code>set</code>函数，返回一个可手动修改的计算状态</li></ul> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">const</span> count <span class="token operator">=</span> <span class="token function">reactive</span><span class="token punctuation">(</span><span class="token punctuation">{</span> count<span class="token operator">:</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> readonly <span class="token operator">=</span> <span class="token function">computed</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> counte<span class="token punctuation">.</span>value <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> writable <span class="token operator">=</span> <span class="token function">computed</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token function-variable function">get</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    count<span class="token punctuation">.</span>value <span class="token operator">+</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">set</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    count<span class="token punctuation">.</span>value <span class="token operator">=</span> value <span class="token operator">-</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>原理伪代码：</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">// 简化的伪代码</span>
+<span class="token keyword">function</span> <span class="token function">computed</span><span class="token punctuation">(</span><span class="token parameter">getter</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> ref <span class="token operator">=</span> <span class="token punctuation">{</span>
+    value<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">watchEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    ref<span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token function">getter</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> ref
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h4 id="copy"><a href="#copy" class="header-anchor">#</a> copy</h4> <p>传入一个对象或者是ref，返回一个原始对象的只读代理。只读属性是深层的，任何内部嵌套属性都是只读。修改会导致warning。</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">const</span> original <span class="token operator">=</span> <span class="token function">reactive</span><span class="token punctuation">(</span><span class="token punctuation">{</span> count<span class="token operator">:</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> copy <span class="token operator">=</span> <span class="token function">readonly</span><span class="token punctuation">(</span>original<span class="token punctuation">)</span>
+
+<span class="token comment">// warning</span>
+copy<span class="token punctuation">.</span>count<span class="token operator">++</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="watcheffect"><a href="#watcheffect" class="header-anchor">#</a> watchEffect</h4> <p>传入一个立即执行函数，响应式追踪依赖，在依赖改变时，重新调用该函数</p> <p><strong>停止侦听</strong>:</p> <ul><li>在<code>setup()</code>函数或生命周期钩子被调用时，侦听器会被链接到该组件的生命周期，并在组件卸载时自动停止。</li> <li><code>const stop = watchEffect(() =&gt; {})</code>显式调用返回值以停止侦听。<code>stop()</code></li></ul> <div class="custom-block danger"><p class="custom-block-title">WARNING</p> <p>清除副作用，以及副作用刷新的时机待完善和理解</p></div> <h4 id="watch"><a href="#watch" class="header-anchor">#</a> watch</h4> <p><code>watch</code> 等同于 <code>this.$watch</code>。侦听特定的数据源，并且在回调函数中执行副作用。默认情况是<strong>懒执行</strong>的，仅在数据源发生变化时才会执行。</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">// 1. 侦听一个 getter</span>
+<span class="token keyword">const</span> state <span class="token operator">=</span> <span class="token function">reactive</span><span class="token punctuation">(</span><span class="token punctuation">{</span> count<span class="token operator">:</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token function">watch</span><span class="token punctuation">(</span>
+  <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> state<span class="token punctuation">.</span>count<span class="token punctuation">,</span>
+  <span class="token punctuation">(</span><span class="token parameter">count<span class="token punctuation">,</span> preCount</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 副作用...</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">)</span>
+<span class="token comment">// 2. 侦听一个 ref</span>
+<span class="token keyword">const</span> count <span class="token operator">=</span> <span class="token function">ref</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token function">watch</span><span class="token punctuation">(</span>count<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">count<span class="token punctuation">,</span> preCount</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 副作用...</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token comment">// 3. 侦听多个数据源</span>
+<span class="token function">watch</span><span class="token punctuation">(</span><span class="token punctuation">[</span>aRef<span class="token punctuation">,</span> bRef<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">[</span>a<span class="token punctuation">,</span> b<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>prevA<span class="token punctuation">,</span> prevB<span class="token punctuation">]</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p><code>watch</code> 和 <code>watchEffect</code> 在停止侦听, 清除副作用 (相应地 <code>onInvalidate</code> 会作为回调的第三个参数传入)，副作用刷新时机 和 侦听器调试 等方面行为一致。</p> <h3 id="生命周期钩子函数"><a href="#生命周期钩子函数" class="header-anchor">#</a> 生命周期钩子函数</h3> <p>这些钩子函数只能在 <code>setup</code> 函数内使用</p> <ul><li><code>beforeCreate</code> -&gt; 使用 <code>setup()</code></li> <li><code>created</code> -&gt; 使用 <code>setup()</code></li> <li><code>beforeMount</code> -&gt; <code>onBeforeMount</code></li> <li><code>mounted</code> -&gt; <code>onMounted</code></li> <li><code>beforeUpdate</code> -&gt; <code>onBeforeUpdate</code></li> <li><code>updated</code> -&gt; <code>onUpdated</code></li> <li><code>beforeDestroy</code> -&gt; <code>onBeforeUnmount</code></li> <li><code>destroyed</code> -&gt; <code>onUnmounted</code></li> <li><code>errorCaptured</code> -&gt; <code>onErrorCaptured</code></li></ul> <p><strong>新增钩子函数</strong>:</p> <ul><li><code>onRenderTacked</code></li> <li><code>onRenderTriggered</code></li></ul> <h3 id="依赖注入"><a href="#依赖注入" class="header-anchor">#</a> 依赖注入</h3> <p><code>provide</code> 和 <code>inject</code> ，都只能在 <code>setup</code> 中调用。如果<code>inject</code>未提供默认值，上下文也未找到，则返回<code>undefined</code>。</p> <p><strong>可以使用 ref 来保证 provide 和 inject 之间的响应</strong>。</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">const</span> ThemeSymbol <span class="token operator">=</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token string">'theme'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> ThemeRef <span class="token operator">=</span> <span class="token function">ref</span><span class="token punctuation">(</span><span class="token string">'dark'</span><span class="token punctuation">)</span>
+
+<span class="token comment">// parent.vue</span>
+<span class="token function">setup</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">provide</span><span class="token punctuation">(</span>ThemeSymbol<span class="token punctuation">,</span> ThemeRef<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// children.vue</span>
+<span class="token function">setup</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ligth 是默认值</span>
+  <span class="token keyword">let</span> theme <span class="token operator">=</span> <span class="token function">inject</span><span class="token punctuation">(</span>ThemeSymbol<span class="token punctuation">,</span> <span class="token function">ref</span><span class="token punctuation">(</span><span class="token string">'light'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token function">watchEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>theme<span class="token punctuation">.</span>value<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h3 id="模板refs-dom引用"><a href="#模板refs-dom引用" class="header-anchor">#</a> 模板Refs-DOM引用</h3> <p>对模板或组件实例的引用，一样在 <code>setup</code> 函数中声明一个 ref 并返回它。</p> <ul><li>Virtual DOM patch 算法中，如果一个VNode的 ref 对应一个渲染上下文中的ref，则该元素或者组件实例就会分配给该 ref。</li> <li>这是在 Virtual DOM 的 mount / patch 过程中执行的，因此模板 ref 仅在渲染初始化后才能访问。</li> <li><code>v-for</code> 中需要使用函数型 <code>ref</code></li></ul> <h3 id="响应式系统工具集"><a href="#响应式系统工具集" class="header-anchor">#</a> 响应式系统工具集</h3> <table><thead><tr><th>工具函数</th> <th>说明</th></tr></thead> <tbody><tr><td><code>unref</code></td> <td><code>val = isRef(val)?val.value:val</code> 的语法糖</td></tr> <tr><td><code>toRef</code></td> <td>为一个 reactive 对象的属性创建一个 ref。这个 ref 可以被传递并且能够保持响应性。</td></tr> <tr><td><code>toRefs</code></td> <td>把一个响应式对象转换成普通对象，该普通对象的每个 property 都是一个 ref</td></tr> <tr><td><code>isRef</code></td> <td>是否为一个 ref 对象</td></tr> <tr><td><code>isProxy</code></td> <td>一个对象是否是由 <code>reactive</code> 或者 <code>readonly</code> 方法创建的代理</td></tr> <tr><td><code>isReactive</code></td> <td>检查一个对象是否是由 <code>reactive</code> 创建的响应式代理。</td></tr> <tr><td><code>isReadonly</code></td> <td>检查一个对象是否是由 <code>readonly</code> 创建的只读代理。</td></tr></tbody></table> <h3 id="高级响应系统api"><a href="#高级响应系统api" class="header-anchor">#</a> 高级响应系统API</h3> <h4 id="customref"><a href="#customref" class="header-anchor">#</a> customRef</h4> <p>用于自定义一个 ref，可以显式地控制依赖追踪和触发响应。</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;home&quot;</span> ref<span class="token operator">=</span><span class="token string">&quot;home&quot;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>input v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">&quot;text&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> customRef <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue'</span>
+
+<span class="token keyword">function</span> <span class="token function">useDebuouncedRef</span> <span class="token punctuation">(</span><span class="token parameter">value<span class="token punctuation">,</span> delay <span class="token operator">=</span> <span class="token number">200</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> timeout
+  <span class="token keyword">return</span> <span class="token function">customRef</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">track<span class="token punctuation">,</span> trigger</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token keyword">get</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">track</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> value
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token keyword">set</span> <span class="token punctuation">(</span>newValue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">clearTimeout</span><span class="token punctuation">(</span>timeout<span class="token punctuation">)</span>
+        timeout <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          value <span class="token operator">=</span> newValue
+          <span class="token function">trigger</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> delay<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">setup</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      text<span class="token operator">:</span> <span class="token function">useDebuouncedRef</span><span class="token punctuation">(</span><span class="token string">'hello'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><h4 id="markraw"><a href="#markraw" class="header-anchor">#</a> markRaw</h4> <p>显式标记一个对象为“永远不会转为响应式代理”，函数返回这个对象本身。</p> <p>如果被 markRaw 标记了，即使在响应式对象中作属性，也依然不是响应式的。</p> <h4 id="shallowreactive、shallowreadonly"><a href="#shallowreactive、shallowreadonly" class="header-anchor">#</a> shallowReactive、shallowReadonly</h4> <p>只为某个对象的私有（第一层）属性创建浅层的响应式代理。</p> <h4 id="shallowref"><a href="#shallowref" class="header-anchor">#</a> shallowRef</h4> <p>创建一个 ref ，将会追踪它的 .value 更改操作，但是并不会对变更后的 .value 做响应式代理转换（即变更不会调用 reactive）</p> <h4 id="toraw"><a href="#toraw" class="header-anchor">#</a> toRaw</h4> <p>返回由 reactive 或 readonly 方法转换成响应式代理的普通对象。这是一个还原方法，可用于临时读取，访问不会被代理/跟踪，写入时也不会触发更改。</p> <h2 id="其它"><a href="#其它" class="header-anchor">#</a> 其它</h2> <h3 id="ref-2"><a href="#ref-2" class="header-anchor">#</a> Ref</h3> <p>Ref是<code>vue3.0</code>中几乎是唯一的“新”概念。
+引入它是为了以变量形式传递响应式的值而不再依赖访问 <code>this</code></p> <h3 id="ref-vs-rreactive"><a href="#ref-vs-rreactive" class="header-anchor">#</a> Ref vs Rreactive</h3> <blockquote><p>Q: 什么时候使用 ref 什么时候使用 reactive？</p></blockquote> <p><code>ref</code> 和 <code>reactive</code> 更类似于一种风格的不同。<code>ref</code> 使用风格1，<code>reactive</code>使用风格2。</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token comment">// 风格 1: 将变量分离</span>
+<span class="token keyword">let</span> x <span class="token operator">=</span> <span class="token number">0</span>
+<span class="token keyword">let</span> y <span class="token operator">=</span> <span class="token number">0</span>
+
+<span class="token keyword">function</span> <span class="token function">updatePosition</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  x <span class="token operator">=</span> e<span class="token punctuation">.</span>pageX
+  y <span class="token operator">=</span> e<span class="token punctuation">.</span>pageY
+<span class="token punctuation">}</span>
+
+<span class="token comment">// --- 与下面的相比较 ---</span>
+
+<span class="token comment">// 风格 2: 单个对象</span>
+<span class="token keyword">const</span> pos <span class="token operator">=</span> <span class="token punctuation">{</span>
+  x<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  y<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">updatePosition</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  pos<span class="token punctuation">.</span>x <span class="token operator">=</span> e<span class="token punctuation">.</span>pageX
+  pos<span class="token punctuation">.</span>y <span class="token operator">=</span> e<span class="token punctuation">.</span>pageY
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>但<code>reactive</code>返回的对象，不能被解构和展开。会失去响应性。</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">const</span> pos <span class="token operator">=</span> <span class="token function">reactive</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  x<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  y<span class="token operator">:</span> <span class="token number">0</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 丢失响应性！</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> x<span class="token punctuation">,</span> y <span class="token punctuation">}</span> <span class="token operator">=</span> pos
+<span class="token comment">// 丢失响应性！</span>
+<span class="token keyword">return</span> <span class="token punctuation">{</span> <span class="token operator">...</span>pos <span class="token punctuation">}</span>
+
+<span class="token comment">// 解决方案:</span>
+<span class="token function">toRefs</span><span class="token punctuation">(</span>pos<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新于:</span> <span class="time">7/15/2020, 1:50:54 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue/" class="prev router-link-active">
+        Vue.js 基础
+      </a></span> <span class="next"><a href="/vue/vue_axios.html">
+        vue + axios
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.8a428542.js" defer></script><script src="/assets/js/2.fba25c7e.js" defer></script><script src="/assets/js/75.a4b1869d.js" defer></script>
+  </body>
+</html>

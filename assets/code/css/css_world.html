@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📚《CSS世界》</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body id="css-world">
+    <ul class="header">
+      <li><a href="#float">float</a></li>
+      <li><a href="#clear">clear</a></li>
+    </ul>
+    <section id="float">
+      <h2>Float</h2>
+      <div class="demo">
+        <div class="title">float 定位参考是“行框盒子”</div>
+        <div class="desc">
+          【更多】设置float:right；后和折行后的内联元素如果能一行放下则保持一致，否则另起一行，超出容器
+        </div>
+        <div class="content float-position">
+          <div class="box">
+            我是一个非常长的足够换行的的标题文字内容<a href="#">更多</a>
+          </div>
+        </div>
+      </div>
+      <div class="demo">
+        <div class="title">两栏布局</div>
+        <div class="desc">
+          包裹块overflow:hidden，定宽的一侧设置左右浮动，动态宽度的子元素设置margin，来实现两栏布局
+        </div>
+        <div class="content float-layout-two">
+          <div class="box">
+            <div class="left">左边内容</div>
+            <div class="right">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              itaque sapiente inventore, commodi dignissimos reiciendis nulla
+              veniam atque. Voluptates inventore nisi temporibus dolor .
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="demo">
+        <div class="title">三栏布局</div>
+        <div class="desc">同两栏布局相似</div>
+        <div class="content float-layout-three">
+          <div class="box">
+            <div class="prev">&laquo;上一章</div>
+            <div class="next">下一章&raquo;</div>
+            <div class="title">第147章：决战紫禁城</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="clear">
+      <div class="demo">
+        <div class="title">overflow</div>
+        <div class="desc">overflow的边界是border-box的内边缘</div>
+        <div class="content overflow-border">
+          <div class="box">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAABkCAYAAADDhn8LAAALi0lEQVR4nO3dd3wUZR7H8c9uNpvdlE3vJBsISYAgIYQSIkWaCKIUFSQiiqKeii9scOqpoJy9oOKh8vIQDxUOVBQE7gVSbECoAiGEEkggENIhvXN/BDeJu/sonl7M5vf+a3bmmZlns/udecrsKxq3G96+iBDCJm1rV0CIPzMJiBAKEhAhFCQgQihIQIRQkIAIoSABEUJBAiKEggRECAUJiBAKEhAhFCQgQihIQIRQkIAIoSABEUJBAiKEggRECAUJiBAKEhAhFCQgQihIQIRQkIAIoSABEUJBAiKEggRECAUJiBAKEhAhFCQgQihIQIRQkIAIoSABEUJBAiKEggRECAUJiBAK7SYgsyYkkP3hdFJev5nuZt/Wro5oI9pFQKJDvZiTnIiXmwux4b68PG1ga1dJtBHtIiBajabF67KqmlaqiWhr2kVA0rOLmbcshZKKGvafzOeJD7e1dpVEG6GRfwMthH3t4g4ixG8lARFCQQIihIKutSvwR4sINNHd7MsVZj+6m33pFu7Diu+O8cLKXZYy3u4unF4y3WrfWYu/4511B/D1MDBzbDzD4sLoGOhJVW0dKenneG7FTlKzCi3lu3TwZub18SR2CSLMz4PismrW787kmWU7KCytUtazc7AXd1/TnRHx4Zj9TTRcvEj+hUr2ZuSxcO0Bfjh89hff67jESKYM6UKvzgH4uBvQOamvf/7J71FZU2e1/sYro0i+KoYrzH74ehg4X1HN0TPFrEk5yeKNh2zu46gcupM+uncEKx671mr9q5/vYe4nO1qsC/RyZerQrsxJTrSse2rpNramZrPir9cS7ONmdZyK6lomvbSOLQeyeWR8L566uZ/NL+Wxs8UMmL2S8qpam/WceX1PnrmlP2t3nWTe8hQyzl0gMsiTl6cNZGhcWGOZRVv554ZDNvc36nUsmz2K4T3DOZJdzPQFG0nNKqS72ZdFM4bTNcwHgJc/282zy1Ls/LXA32Rk2exRJHYJ5q3V+3h3/UFyisvpbvZl/vTB9I4KJCuvhPHPreHomfN2j+NIHDogAOH+HozvH8m8KUlotY3zIbYC8pOlj4xkfP/OAGzYl0XPTv78a9Nhln97hKy8UnpHBfDu/cMwB5gAyCkqZ+2uk4yID+eFlbvYejCbC+XV3DggilemDcSgb7xJz1uWwkuf7bY63+3DuvH2vUMAmPjiWtbtzrRsM+p1HHrnVgI8XamoriX23qXkl1RaHeODB0dw04BoAIY8/im7juVatnUL82Hn/MkAlFXWYL5jMdW19VbH8DA68+1LNxEV4s2cj7fz2qq9LbZ7u7uwf8EUfDwMnDx3gb4PL28XdxKH74Ocyi/lzdU/8vHW9F9VPu1UkWV5QLcQJr24jrmf7CA9u5jKmjq+O3SW6W99bSkT7ONGn+hAkh79Nx9tSSe7oIzSylo+2JjGW2t+tJQbmWC2eb4HrutpWY4M9mqxrbKmjq9STgLg6uJs8xgRgSZLOHKKyluEAyDtdBG7L61zN+oZ0C3EZj1evXMQUSHeZOWV8PoXe622F5dV88X2DAA6BnkydVhXm8dxNA4fkJ8cPVN82fss+k+q1RcOYHt6DgXNruRPf7SdCxXWs/Ord5ywLHcK8rR5Dr2u6SMwODtZbc8419SUsXWMXpEBluXTBaU2z5Fx7oJlOTrU22p7RKCJyYNiAFiz8wQX7bQp9mfmW5ZH9rIdeEfTbgLyW9jrM0DLL2NVjXWT5edl3A3ONsu8tmovJRU17EjPYcnXaVbbG5p9WW0do6pZM0entf1x1tU3WJZ//tgNwKQB0Zbm5xHFhST/QtNFoWOgyW45R+Lwo1h/lIsNv1ymwd6luJklm9JYssk6GPGR/kwaGE3y4C7K/fccz6Omth69sxMRgSY0GqzuAJHN7jx7M/KsjtEnOtCyvOCeISy4Z8gv1tvVxXbgHY0E5E+kf5dgxiZ2YlRCBLuP57Fq+3FyiyuYd2sSYDtwuecreGP1Pmbf0BsfDwNj+0XyxY4My/boUC/6RgcBsPVgNtvTc6yO0XyE7i//2MRHW35df609kID8CUwd2pVZExIwB5h4+6sfufqpVeSerwDg3tE9LOXq6m3fkZ5dlkJdfQOPjk/g9bsGUVxWxfdpZ4kN9+W9GcPQajVsO3yWW15Zb3P/5sHzdjf8ju+s7ZOAtLL3Zgzjlqsam1HJr6xndcqJFtubd+Jr6mz3dQCeX7GL7IIyFt43lLVzxwFQUlFDalYB9y3czNIth+12vnOLKyzL0aFetgu1UxKQVjS6d4QlHJv3n7YKB4Be1zSy1byz/XN/vzWJO0bEMuLJz202o1T2ZuRxTUIEAEN7hF3Wvo5ORrFa0fCe4Zbl9Owim2Waz8zX22lijUqI4MGx8ezNyLvscAAtgmkOMDG6d4SyfHezL+vmjsPb3eWyz9XWSEBakb+n0bLcOcS6aePi7MSQHh0sr+2NiiVENc6FJMYEMW1EN0J83HDSWg/n2pOaVciGfVmW12/efRXh/h42y3q7u/DhQyPRahsnDx1du2liGV2a3qqvyX5H1MPYNHzp62G/XPPjmVz1tsvom8rodU64ODu1eMwjNbPQ8ljL1fFmHhobz5JNadTUNTAoNpS5tyTi06zTbO+Kvfd449CtQa9rMURbV99ARXUdF8qrKams4UxhGZ9vO25zlOq+hZv5/uWJBHm7EezjxrZXJ/HSp7v5ckcGOcXl+LgbGBYXxuM39cGg1zH+uTV2/zaOxEnfbfTc1q7EH8lJq+EKsx9/m9QXX4/GK3ZkkBc5ReWcyC2htq6xXe+s05IQGcATE/vi6db4Rewc4kVmXgmn8kst5dwMzoztF8mdI2LRXJp0iwg0sed4XovnpPxNRmZNSKB3VOMcg0ajwc2gIz27mJJLs+6pWQVMHBBtOd/QuDAeHteLWRMSmDgwmvW7M5m+4GumX90dnZOWDn4ebN5/2up5rGNnz6Nz0tIvJsgy4Qeg1WpwcXbC082FAE9XIoO9GNO3E0ldQ/gy5YTlPQGUVdWyeucJBsaGEujlikGvY3jPcO4fE8djN/Zh5vXxXNevE3nnK7lmzipOF5T9fh/Sn5jDP6z4wysTievob3NbVl4JsfctBWDPG8nEdLB+DKN5OaNeR/4n99g91xtf7uPJpdtIHhzDogeG2y1394Kv+eSbI0DjU8RPT+7HqN4ReLm6UFhaxc6j53h/QypbDmQDMKJnOM9O6U9MqDcVNXUcPVPM7fM3cCq/aabe18PAyF5mnr/tSvxMRpvnbe7DTWnc/84Wq/UaDUweFMO4/pHEdfTH32SkqraetFOFrPzhGIs3HmoRLEfn8AFxdEHerjw39UpuSOpMTlE585ansH5PJsVl1ThpNbi66PAw6vEzGZmQ1JmHx/VCq9VQVVNH6G3v23yyVzRpN30QR+Sk1bB2zjhiOnhTUFLJgNkrWvwwq77hIqWVtZRW1nK2qJwDmQVEhXgxNjESg15HoJdri7uQsCajWG1YUtdgS7Nw7a6Tv/irRYDDl4aTGxou/qry7Z0EpA37NXMkP/fTg4tbD2Yrn1YWjSQgbdjOo7mcL2+cixjTryNB3q7K8n2iAhnbL5Lz5dU8uvjb/0cV2zyHH+Z1ZLV1Dew5nsuohAj8TEZuHhyDVqOhpKKGsqpa6hsa8DA6E9fRnxlj4ph/12AOZhUy8cW1HGknvyn/X8kolgPwMDqTfFUXhvYIIzrUi0AvN1xddNTVN1BWVUtmbgk/nshn1fbjfJN6prWr26ZIQIRQkD6IEAoSECEUJCBCKEhAhFCQgAihIAERQkECIoSCBEQIBQmIEAoSECEUJCBCKEhAhFCQgAihIAERQkECIoSCBEQIBQmIEAoSECEUJCBCKEhAhFCQgAihIAERQkECIoSCBEQIBQmIEAoSECEUJCBCKEhAhFCQgAihIAERQkECIoSCBEQIBQmIEAr/BfR8nO7otkpgAAAAAElFTkSuQmCC"
+              alt="placeholder"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="absolute">
+      <div class="demo" id="absolute_form">
+        <div class="title">absolute排版</div>
+        <div class="desc">超越常规布局的排版:表单验证提示</div>
+        <div class="content absolute-form">
+          <div class="box">
+            <div class="regist-box">
+              <div class="regist-group">
+                <label class="regist-label">
+                  <span class="regist-star">*</span>邮箱
+                </label>
+                <div class="regist-cell">
+                  <input class="regist-input" type="email" />
+                  <span class="regist-remark regist-warn">
+                    <i class="icon-warn"></i>邮箱格式不准确（示意）
+                  </span>
+                </div>
+              </div>
+              <div class="regist-group">
+                <label class="regist-label">
+                  <span class="regist-star">*</span>密码
+                </label>
+                <div class="regist-cell">
+                  <input class="regist-input" type="password" />
+                  <span class="regist-remark">
+                    请输入6-16位密码，不能使用空格
+                  </span>
+                </div>
+              </div>
+              <div class="regist-group">
+                <label class="regist-label">
+                  手机号码
+                </label>
+                <div class="regist-cell">
+                  <input class="regist-input" type="tel" />
+                </div>
+              </div>
+              <div class="regist-group">
+                <i class="regist-label"></i>
+                <div class="regist-cell">
+                  <a href="javascript:" class="regist-btn">立即注册</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="demo" id="absolute_search_box">
+        <div class="title">下拉列表</div>
+        <div class="desc">“无依赖绝对定位”与下拉列表定位实例页面</div>
+        <div class="content absolute-search-box">
+          <div class="box">
+            <div class="search-box">
+              <input class="search-input" placeholder="搜索" />
+              <a href="javascript:" class="search-btn">搜索</a>
+              <div class="search-result">
+                <div class="search-datalist">
+                  <a href>搜索结果1</a>
+                  <a href>搜索结果2</a>
+                  <a href>搜索结果3</a>
+                  <a href>搜索结果4</a>
+                  <a href>搜索结果5</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="demo" id="absolute_text_align">
+        <div class="title">text-align影响absolute元素</div>
+        <div class="desc">
+          box的text-align为center，img为“无依赖绝对定位”下的表现结果
+        </div>
+        <div class="content absolute-text-align">
+          <div class="box">
+            <p>
+              <img
+                src="data:image/png;base64,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"
+                alt="placeholder"
+              />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="demo" id="absolute_backToTop">
+        <div class="title">回到顶部</div>
+        <div class="desc">
+          text-align和“无依赖绝对定位”结合最适用的场景
+        </div>
+        <div class="content absolute-text-align">
+          <div class="box">
+            <p>
+              <img
+                src="data:image/png;base64,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"
+                alt="placeholder"
+              />
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

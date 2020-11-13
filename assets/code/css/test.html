@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        html{
+            overflow-y: scroll;
+        }
+        :root{
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        :root body{
+            position: absolute;
+        }
+        body{
+            width: 100vw;
+            overflow: hidden;
+        }
+        #test{
+            overflow: hidden;
+        }
+        #test p{
+            line-height: 80px;
+            background-color: antiquewhite;
+            margin: 1px;
+            width: 90px;
+            float: left;
+        }
+        ::-webkit-scrollbar{
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 6px;
+        }
+        ::-webkit-scrollbar-track{
+            background-color: #dddddd;
+            border-radius: 6px;
+        }
+        .ell{
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+      #more {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function handleClick() {
+        console.log("clicked");
+        let more = document.getElementById("more");
+        more.style.display = "block";
+      }
+    </script>
+    <div id="test">
+      <p class="ell">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore modi assumenda impedit asperiores amet. Quo, quasi nobis, doloremque dolor voluptatum fuga dolorum quia exercitationem impedit harum, labore laboriosam quas architecto.</p>
+      <p>01loremn</p>
+      <p>02loremn</p>
+      <p>03loremn</p>
+      <p>04loremn</p>
+      <p>05loremn</p>
+      <p>06loremn</p>
+      <p>07loremn</p>
+      <p>08loremn</p>
+      <p>09loremn</p>
+      <p>10loremn</p>
+      <p>11loremn</p>
+      <p>12loremn</p>
+      <p>13loremn</p>
+      <p>14loremn</p>
+      <p>15loremn</p>
+      <p>16loremn</p>
+      <p>17loremn</p>
+      <p>18loremn</p>
+      <p>19loremn</p>
+      <p>20loremn</p>
+    </div>
+    <button onclick="handleClick()">更多</button>
+    <div id="more">
+      <p>01loremn</p>
+      <p>02loremn</p>
+      <p>03loremn</p>
+      <p>04loremn</p>
+      <p>05loremn</p>
+      <p>06loremn</p>
+      <p>07loremn</p>
+      <p>08loremn</p>
+      <p>09loremn</p>
+      <p>10loremn</p>
+      <p>11loremn</p>
+      <p>12loremn</p>
+      <p>13loremn</p>
+      <p>14loremn</p>
+      <p>15loremn</p>
+      <p>16loremn</p>
+      <p>17loremn</p>
+      <p>18loremn</p>
+      <p>19loremn</p>
+      <p>20loremn</p>
+      <p>21loremn</p>
+      <p>22loremn</p>
+      <p>23loremn</p>
+      <p>24loremn</p>
+      <p>25loremn</p>
+      <p>26loremn</p>
+      <p>27loremn</p>
+      <p>28loremn</p>
+      <p>29loremn</p>
+      <p>30loremn</p>
+      <p>31loremn</p>
+      <p>32loremn</p>
+      <p>33loremn</p>
+      <p>34loremn</p>
+      <p>35loremn</p>
+      <p>36loremn</p>
+      <p>37loremn</p>
+      <p>38loremn</p>
+      <p>39loremn</p>
+      <p>40loremn</p>
+    </div>
+  </body>
+</html>

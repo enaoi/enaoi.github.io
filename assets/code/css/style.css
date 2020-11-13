@@ -1,0 +1,280 @@
+html,
+body {
+  background-color: #f6f6f6;
+  font-size: 12px;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 500px;
+}
+
+#css-world .header {
+  list-style: none;
+  cursor: pointer;
+}
+
+#css-world .header li {
+  position: relative;
+  display: inline-block;
+  margin: 4px 8px;
+  color: #007fff;
+}
+#css-world .header li:hover {
+  color: darkorange;
+}
+#css-world .header li:before {
+  content: " ";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: currentColor;
+  margin-left: -5px;
+  line-height: 24px;
+  vertical-align: super;
+}
+#css-world .header a {
+  display: inline-block;
+  font-size: 20px;
+  color: inherit;
+  padding: 4px 12px;
+  text-decoration: none;
+}
+
+#css-world section {
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin: 10px 20px;
+  padding: 12px 20px;
+}
+
+#css-world section > h2 {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+#css-world .demo {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  border: 1px solid darkorange;
+  border-top-width: 3px;
+}
+
+#css-world .demo > .title {
+  font-size: 16px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  background-color: rgb(255, 228, 196);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 1px solid darkorange;
+}
+#css-world .demo > .desc {
+  padding-left: 8px;
+  line-height: 1.8em;
+}
+#css-world .demo .content {
+  margin: 4px 10px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+#css-world .demo .content .box {
+  border: 1px solid #cccccc;
+}
+/* demo部分 */
+.float-position .box {
+  width: 120px;
+  font-size: 16px;
+}
+.float-position .box a {
+  float: right;
+}
+.float-layout-two .box {
+  overflow: hidden;
+}
+.float-layout-two .box .left {
+  float: left;
+  width: 20px;
+  background-color: burlywood;
+}
+.float-layout-two .box .right {
+  margin-left: 26px;
+}
+.float-layout-three .box {
+  overflow: hidden;
+}
+.float-layout-three .box .prev {
+  float: left;
+  background-color: burlywood;
+}
+.float-layout-three .box .next {
+  float: right;
+  background-color: burlywood;
+}
+.float-layout-three .box .title {
+  margin: 0 70px;
+  text-align: center;
+}
+
+.overflow-border .box {
+  background-color: darkcyan;
+  width: 200px;
+  height: 60px;
+  padding: 10px;
+  margin: 10px;
+  border: 10px solid #000000 !important;
+  overflow: hidden;
+  color: #ffffff;
+}
+.absolute-form .box {
+  padding: 20px;
+}
+.regist-box {
+  width: 356px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+}
+.regist-group {
+  margin: 20px 0;
+  overflow: hidden;
+}
+.regist-group .regist-label {
+  width: 70px;
+  float: left;
+  padding-top: 10px;
+}
+.regist-group .regist-cell {
+  display: table-cell;
+  *display: inline-block;
+}
+
+.regist-group .regist-input {
+  height: 20px;
+  line-height: 20px;
+  width: 260px;
+  padding: 9px 5px;
+  border: 1px solid #d0d6d9;
+  vertical-align: top;
+}
+
+.regist-group .regist-star {
+  position: absolute;
+  margin-left: -1em;
+  font-family: simsun;
+  color: #f30;
+}
+
+.regist-group .regist-remark {
+  position: absolute;
+  margin: 10px 0 0 10px;
+  color: #666;
+}
+.regist-group .regist-warn {
+  padding-left: 16px;
+  color: #be0000;
+}
+.regist-group .regist-btn {
+  display: block;
+  width: 160px;
+  line-height: 40px;
+  background-color: #be0000;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+.icon-warn {
+  position: absolute;
+  margin-left: -18px;
+  width: 16px;
+  height: 20px;
+  background: url(https://demo.cssworld.cn/images/6/warn.gif) no-repeat center;
+}
+
+/* 搜索下拉框 */
+.absolute-search-box .box {
+  padding: 20px;
+}
+.search-box {
+  display: inline-block;
+  white-space: nowrap;
+}
+.search-box .search-input {
+  width: 200px;
+  height: 20px;
+  line-height: 20px;
+  margin: 0;
+  padding: 9px 39px 9px 9px;
+  border: 1px solid #ddd;
+  transition: border-color 0.15s;
+}
+.search-box .search-input:focus {
+  border-color: #2ea7e0;
+  outline: none;
+}
+/* 搜索按钮的无依赖绝对定位 */
+.search-box .search-btn {
+  width: 20px;
+  height: 20px;
+  border: 9px solid #ffffff;
+  background: #ddd
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPdJREFUeNpi+k9lwMRAZYDLwCNAHAnEMkDMDqUjoeL4AZqLfwNxFhAz4MEg+V+4vIxuYApUjBOIG4H4DhD/hNKNUHEGqDqCBh6B8rmA+CgO9Ueh8gxQ9XgjZSqUrgBiKxwhBBIvg7KnEApDcajNdwikjLtQdVKEXPgSSssSiEcZKP2KULIRh9KPCRj4FEqLEjLQEUovJ2DgYihtRygMD5MYy4eJSYfZRKZDEE4C4n+EDPxFRE5hwGcoAw6vgbwTAU0azFA6BohPQQ3BaSgDGSXUXyyG5lNiIDZDhWESLBQUe7OBmA+IFwBxMUyCEexMOhSwZAOAAAMAVJM+EQ2rrOoAAAAASUVORK5CYII=)
+    no-repeat center;
+  text-indent: -9em;
+  position: absolute;
+  margin: 1px 0 0 -40px;
+  transition: background-color 0.15s;
+  overflow: hidden;
+}
+.search-box .search-input:focus ~ .search-btn {
+  background-color: #2ea7e0;
+}
+.search-box .search-result {
+  display: none;
+}
+
+.search-box .search-input:focus ~ .search-result {
+  display: block;
+}
+/* 下拉列表的无依赖绝对定位 */
+.search-box .search-datalist {
+  position: absolute;
+  width: 248px;
+  border: 1px solid #e6e8e9;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 2px #d5d7d8;
+  text-align: left;
+  z-index: 1;
+}
+.search-box .search-datalist a {
+  display: block;
+  line-height: 36px;
+  padding-left: 12px;
+  color: #5e5e5e;
+  text-decoration: none;
+}
+.search-box .search-datalist a:hover {
+  color: #000000;
+  background-color: #f9f9f9;
+}
+
+.absolute-text-align p {
+  margin: 0;
+  background-color: #f9f9f9;
+  width: 600px;
+  height: 120px;
+  text-align: center;
+  /* IE8 兼容 */
+  font-size: 0.1px;
+  font-size: -webkit-calc(1px - 1px);
+}
+
+/* IE Edge兼容 */
+.absolute-text-align p:before {
+  content: "\2002";
+}
+.absolute-text-align p img {
+  position: absolute;
+}

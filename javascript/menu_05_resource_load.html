@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>浏览器资源加载 | enaoi&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="vue、react、webpack...，everything about front development.">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="preload" href="/assets/css/0.styles.14f0b62d.css" as="style"><link rel="preload" href="/assets/js/app.dc2a0576.js" as="script"><link rel="preload" href="/assets/js/2.11d19bd3.js" as="script"><link rel="preload" href="/assets/js/44.86703b4b.js" as="script"><link rel="prefetch" href="/assets/js/10.98c47988.js"><link rel="prefetch" href="/assets/js/11.d7c912d5.js"><link rel="prefetch" href="/assets/js/12.5baf646b.js"><link rel="prefetch" href="/assets/js/13.57e81f3e.js"><link rel="prefetch" href="/assets/js/14.e6de5925.js"><link rel="prefetch" href="/assets/js/15.d11de5dd.js"><link rel="prefetch" href="/assets/js/16.96516270.js"><link rel="prefetch" href="/assets/js/17.a3706a5a.js"><link rel="prefetch" href="/assets/js/18.8a7cbfdc.js"><link rel="prefetch" href="/assets/js/19.35b33062.js"><link rel="prefetch" href="/assets/js/20.a768ccec.js"><link rel="prefetch" href="/assets/js/21.de7c3de9.js"><link rel="prefetch" href="/assets/js/22.91ae7333.js"><link rel="prefetch" href="/assets/js/23.c195e0fd.js"><link rel="prefetch" href="/assets/js/24.f1a0be61.js"><link rel="prefetch" href="/assets/js/25.830768c8.js"><link rel="prefetch" href="/assets/js/26.ecdbaa22.js"><link rel="prefetch" href="/assets/js/27.c11eb401.js"><link rel="prefetch" href="/assets/js/28.e1d2ae6d.js"><link rel="prefetch" href="/assets/js/29.7dbe41bc.js"><link rel="prefetch" href="/assets/js/3.8bd42a0a.js"><link rel="prefetch" href="/assets/js/30.dba9760a.js"><link rel="prefetch" href="/assets/js/31.eb44f132.js"><link rel="prefetch" href="/assets/js/32.82188c4f.js"><link rel="prefetch" href="/assets/js/33.70bd62c4.js"><link rel="prefetch" href="/assets/js/34.e61aa4d5.js"><link rel="prefetch" href="/assets/js/35.88fc4055.js"><link rel="prefetch" href="/assets/js/36.1f27c2c8.js"><link rel="prefetch" href="/assets/js/37.bffcb782.js"><link rel="prefetch" href="/assets/js/38.2a3ce61c.js"><link rel="prefetch" href="/assets/js/39.82569ab4.js"><link rel="prefetch" href="/assets/js/4.a201f84c.js"><link rel="prefetch" href="/assets/js/40.610237f4.js"><link rel="prefetch" href="/assets/js/41.e4e5bd18.js"><link rel="prefetch" href="/assets/js/42.b68fb12b.js"><link rel="prefetch" href="/assets/js/43.e9a1fbf0.js"><link rel="prefetch" href="/assets/js/45.aca6880f.js"><link rel="prefetch" href="/assets/js/46.633acbd7.js"><link rel="prefetch" href="/assets/js/47.b29718ef.js"><link rel="prefetch" href="/assets/js/48.083797ae.js"><link rel="prefetch" href="/assets/js/49.3975f53b.js"><link rel="prefetch" href="/assets/js/5.8d87159a.js"><link rel="prefetch" href="/assets/js/50.e66ec424.js"><link rel="prefetch" href="/assets/js/51.3a322244.js"><link rel="prefetch" href="/assets/js/52.f2f66746.js"><link rel="prefetch" href="/assets/js/53.50f2084a.js"><link rel="prefetch" href="/assets/js/54.eed8c1a4.js"><link rel="prefetch" href="/assets/js/55.32fb1514.js"><link rel="prefetch" href="/assets/js/56.49cc5939.js"><link rel="prefetch" href="/assets/js/57.14c5862b.js"><link rel="prefetch" href="/assets/js/58.3406a0cd.js"><link rel="prefetch" href="/assets/js/59.e075b367.js"><link rel="prefetch" href="/assets/js/6.17ee8618.js"><link rel="prefetch" href="/assets/js/60.b948c23c.js"><link rel="prefetch" href="/assets/js/61.cb54f658.js"><link rel="prefetch" href="/assets/js/62.fe18928d.js"><link rel="prefetch" href="/assets/js/63.93d08160.js"><link rel="prefetch" href="/assets/js/64.a772b358.js"><link rel="prefetch" href="/assets/js/65.2a8f9764.js"><link rel="prefetch" href="/assets/js/66.848d69fd.js"><link rel="prefetch" href="/assets/js/67.eb9dfa5a.js"><link rel="prefetch" href="/assets/js/68.5e23b4a2.js"><link rel="prefetch" href="/assets/js/69.4ec0d823.js"><link rel="prefetch" href="/assets/js/7.c0ab16fe.js"><link rel="prefetch" href="/assets/js/70.9ed535aa.js"><link rel="prefetch" href="/assets/js/71.d4c96826.js"><link rel="prefetch" href="/assets/js/72.cadb8b3c.js"><link rel="prefetch" href="/assets/js/73.299cc5b8.js"><link rel="prefetch" href="/assets/js/74.57dc718f.js"><link rel="prefetch" href="/assets/js/75.b8b21f84.js"><link rel="prefetch" href="/assets/js/76.714894d7.js"><link rel="prefetch" href="/assets/js/77.beebd88c.js"><link rel="prefetch" href="/assets/js/78.23d6ade9.js"><link rel="prefetch" href="/assets/js/79.b2aef682.js"><link rel="prefetch" href="/assets/js/8.b476c428.js"><link rel="prefetch" href="/assets/js/80.ddc1dd90.js"><link rel="prefetch" href="/assets/js/9.05ba9cfe.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.14f0b62d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">enaoi's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link router-link-active">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/tools/" class="nav-link">
+  Tools
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="中级" class="dropdown-title"><span class="title">中级</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          MVVM框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/angular/" class="nav-link">
+  angular
+</a></li></ul></li><li class="dropdown-item"><h4>
+          扩展
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/typescript/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          打包工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-subitem"><a href="/vite/" class="nav-link">
+  vite
+</a></li></ul></li><li class="dropdown-item"><h4>
+          知识
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/http/" class="nav-link">
+  Http
+</a></li><li class="dropdown-subitem"><a href="/libs/" class="nav-link">
+  库
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="高级" class="dropdown-title"><span class="title">高级</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          后端服务
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/nodejs/" class="nav-link">
+  nodejs
+</a></li><li class="dropdown-subitem"><a href="/koa/" class="nav-link">
+  koa
+</a></li><li class="dropdown-subitem"><a href="/express.html" class="nav-link">
+  express
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据结构和算法
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/datastructures/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-subitem"><a href="/algorithm/" class="nav-link">
+  算法
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="阅读" class="dropdown-title"><span class="title">阅读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reading/" class="nav-link">
+  文学类
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/git/" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/vscode/" class="nav-link">
+  vscode
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/" class="nav-link">
+  计算机
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/enaoi" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link router-link-active">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/tools/" class="nav-link">
+  Tools
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="中级" class="dropdown-title"><span class="title">中级</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          MVVM框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/angular/" class="nav-link">
+  angular
+</a></li></ul></li><li class="dropdown-item"><h4>
+          扩展
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/typescript/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          打包工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-subitem"><a href="/vite/" class="nav-link">
+  vite
+</a></li></ul></li><li class="dropdown-item"><h4>
+          知识
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/http/" class="nav-link">
+  Http
+</a></li><li class="dropdown-subitem"><a href="/libs/" class="nav-link">
+  库
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="高级" class="dropdown-title"><span class="title">高级</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          后端服务
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/nodejs/" class="nav-link">
+  nodejs
+</a></li><li class="dropdown-subitem"><a href="/koa/" class="nav-link">
+  koa
+</a></li><li class="dropdown-subitem"><a href="/express.html" class="nav-link">
+  express
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据结构和算法
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/datastructures/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-subitem"><a href="/algorithm/" class="nav-link">
+  算法
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="阅读" class="dropdown-title"><span class="title">阅读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reading/" class="nav-link">
+  文学类
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/git/" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/vscode/" class="nav-link">
+  vscode
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/" class="nav-link">
+  计算机
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/enaoi" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/javascript/" aria-current="page" class="sidebar-link">目录</a></li><li><a href="/javascript/menu_01_basicDataType.html" class="sidebar-link">基础数据类型</a></li><li><a href="/javascript/menu_02_this.html" class="sidebar-link">执行上下文与 this</a></li><li><a href="/javascript/menu_03_regex.html" class="sidebar-link">正则表达式</a></li><li><a href="/javascript/menu_04_window.html" class="sidebar-link">浏览器对象</a></li><li><a href="/javascript/menu_05_resource_load.html" aria-current="page" class="active sidebar-link">浏览器资源加载</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/javascript/menu_05_resource_load.html#处理url请求过程" class="sidebar-link">处理URL请求过程</a></li><li class="sidebar-sub-header"><a href="/javascript/menu_05_resource_load.html#同步、异步和延迟脚本" class="sidebar-link">同步、异步和延迟脚本</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/javascript/menu_05_resource_load.html#defer-和-async" class="sidebar-link">defer 和 async</a></li><li class="sidebar-sub-header"><a href="/javascript/menu_05_resource_load.html#优先级" class="sidebar-link">优先级</a></li><li class="sidebar-sub-header"><a href="/javascript/menu_05_resource_load.html#低版本方案" class="sidebar-link">低版本方案</a></li></ul></li><li class="sidebar-sub-header"><a href="/javascript/menu_05_resource_load.html#如何计算渲染时间" class="sidebar-link">如何计算渲染时间</a></li></ul></li><li><a href="/javascript/menu_06_browser_render.html" class="sidebar-link">浏览器渲染</a></li><li><a href="/javascript/menu_07_javascriptLoad.html" class="sidebar-link">网页解析和脚本执行时间线</a></li><li><a href="/javascript/menu_08_browser_event.html" class="sidebar-link">浏览器事件</a></li><li><a href="/javascript/menu_09_static_resource_update.html" class="sidebar-link">静态资源版本更新与缓存</a></li><li><a href="/javascript/menu_10_closure.html" class="sidebar-link">闭包</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="浏览器资源加载"><a href="#浏览器资源加载" class="header-anchor">#</a> 浏览器资源加载</h1> <h2 id="处理url请求过程"><a href="#处理url请求过程" class="header-anchor">#</a> 处理URL请求过程</h2> <p>当你在浏览器地址栏输入url，敲击回车后，发生了什么？文档返回后，浏览器如何执行脚本？</p> <ol><li><p>在接收到用户输入的网址后，浏览器会开启一个线程来处理这个请求，对用户输入的URL地址进行分析判断，如果是HTTP协议就按照HTTP协议方式来处理。</p></li> <li><p>调用浏览器引擎中的对应方法，比如webView中的loadUrl方法，分析并加载这个URL地址。</p></li> <li><p>通过DNS解析获取该网站地址对应的IP地址，查询完成后，连同浏览器的Cookie、userAgent等信息向网站目的IP发出GET请求。</p></li> <li><p>进行HTTP会话，浏览器客户端向Web服务端发送报文。</p></li> <li><p>进入网站后台上的Web服务器处理请求，如：Apache、Tomcat、Node.js等服务器。</p></li> <li><p>进入部署好的后端应用，如PHP、Java、JavaScript、Python等后端程序，找到对应的请求处理逻辑，这期间可能会读取服务器缓存或查询数据库等。</p></li> <li><p>服务器请求并返回响应报文，如果浏览器访问过该页面，缓存上有对应资源，会与服务器最后修改记录对比，一致则返回304，否则返回200和对应内容。</p></li> <li><p>浏览器开始下载HTML文档(响应报头为200时)或者从本地缓存读取文件内容。</p></li> <li><p>浏览器根据下载接收到的HTML文件解析结构建立DOM文档树，并根据HTML中标记请求下载指定的MIME类型文件（CSS、JavaScript文件等）。同时设置缓存等内容。</p></li> <li><p>页面开始解析渲染DOM，CSS根据规则解析并结合DOM文档树进行网页内容布局和绘制渲染，JavaScript根据DOM API操作DOM，并读取浏览器缓存、执行事件绑定等，页面整个展示完成。</p></li></ol> <h2 id="同步、异步和延迟脚本"><a href="#同步、异步和延迟脚本" class="header-anchor">#</a> 同步、异步和延迟脚本</h2> <p>html解析器遇到<code>script</code>元素时，默认必须先执行脚本，然后再恢复文档的解析和渲染。</p> <p>这对于内联脚本没什么问题，但对于src引入的外部文件，这意味着脚本之后的文档在该脚本下载和执行前，会阻塞 页面 UI的渲染。</p> <h3 id="defer-和-async"><a href="#defer-和-async" class="header-anchor">#</a> defer 和 async</h3> <p>defer 和 async 属性都会使浏览器在下载脚本时，继续解析和渲染文档。</p> <ul><li><p>defer 属性：浏览器延迟执行脚本，直到文档的载入和解析完成，并可以操作。 可以获取所有的DOM，保持顺序完成。</p></li> <li><p>async属性：浏览器可以尽快执行脚本，而不用在下载脚本时，阻塞文档解析。也就是说脚本执行的时候DOM还没有被编译，所以有可能无法访问DOM结构，且是乱序的。</p></li></ul> <h3 id="优先级"><a href="#优先级" class="header-anchor">#</a> 优先级</h3> <p>同时存在 defer 和 async ： async 优先，defer 被忽略。</p> <h3 id="低版本方案"><a href="#低版本方案" class="header-anchor">#</a> 低版本方案</h3> <p>不支持async属性的浏览器，可以动态创建script元素，并把它插入到浏览器，来实现异步载入和执行。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">loadasync</span><span class="token punctuation">(</span><span class="token parameter">url</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">var</span> head <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementByTagName</span><span class="token punctuation">(</span><span class="token string">&quot;head&quot;</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">var</span> s <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">&quot;script&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  s<span class="token punctuation">.</span>src <span class="token operator">=</span> url<span class="token punctuation">;</span>
+  head<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Google Analytics 和 Google+ Badge 都使用了这种异步加载代码，但是是立即执行函数，基本模式如下：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">var</span> s <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'script'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   s<span class="token punctuation">.</span>type <span class="token operator">=</span> <span class="token string">'text/javascript'</span><span class="token punctuation">;</span>
+   s<span class="token punctuation">.</span>async <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+   a<span class="token punctuation">.</span>src <span class="token operator">=</span> <span class="token string">'js/jquery.min.js'</span><span class="token punctuation">;</span>
+   <span class="token keyword">var</span> x <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">'script'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+   x<span class="token punctuation">.</span>parentNode<span class="token punctuation">.</span><span class="token function">insertBefore</span><span class="token punctuation">(</span>s<span class="token punctuation">,</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>但是这种加载方法会在加载执行完之前阻止onload事件的触发。我们可以在onload时异步加载</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">function</span> <span class="token function">async_load</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> s <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'script'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        s<span class="token punctuation">.</span>type <span class="token operator">=</span> <span class="token string">'text/javascript'</span><span class="token punctuation">;</span>
+        s<span class="token punctuation">.</span>async <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        a<span class="token punctuation">.</span>src <span class="token operator">=</span> <span class="token string">'js/jquery.min.js'</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> x <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">'script'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        x<span class="token punctuation">.</span>parentNode<span class="token punctuation">.</span><span class="token function">insertBefore</span><span class="token punctuation">(</span>s<span class="token punctuation">,</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">if</span><span class="token punctuation">(</span>window<span class="token punctuation">.</span>attachEvent<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        window<span class="token punctuation">.</span><span class="token function">attachEvent</span><span class="token punctuation">(</span><span class="token string">'onload'</span><span class="token punctuation">,</span>async_load<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+        window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'load'</span><span class="token punctuation">,</span>async_load<span class="token punctuation">,</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="如何计算渲染时间"><a href="#如何计算渲染时间" class="header-anchor">#</a> 如何计算渲染时间</h2> <p><code>window.performance</code> 包含了浏览器加载阶段各种信息。
+页面加载过程中的各个时间环顺序：
+<img src="/images/performanc_timing.png" alt="performanc timing"></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> data <span class="token operator">=</span> <span class="token punctuation">{</span>
+  timeOrigin<span class="token operator">:</span> <span class="token number">1577341568983.8718</span><span class="token punctuation">,</span>
+  <span class="token comment">// 只有chrome浏览器有</span>
+  memory<span class="token operator">:</span> <span class="token punctuation">{</span>
+    totalJSHeapSize<span class="token operator">:</span> <span class="token number">19412842</span><span class="token punctuation">,</span>
+    usedJSHeapSize<span class="token operator">:</span> <span class="token number">17133522</span><span class="token punctuation">,</span>
+    jsHeapSizeLimit<span class="token operator">:</span> <span class="token number">2197815296</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  navigation<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 0 正常进入页面</span>
+    <span class="token comment">// 1 通过 window.location.reload() 刷新页面</span>
+    <span class="token comment">// 2 通过浏览器的前进后退按钮进入页面</span>
+    <span class="token comment">// 255 非以上方式进入的页面</span>
+    type<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 页面经过几次重定向跳转而来</span>
+    redirectCount<span class="token operator">:</span> <span class="token number">0</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  timing<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 在同一个浏览器上下文中，前一个网页unload的时间戳，如果无前一个网页的unload，则与fetchStart相等</span>
+    navigationStart<span class="token operator">:</span> <span class="token number">1577341568983</span><span class="token punctuation">,</span>
+    <span class="token comment">// 与当前页面同域名的钱一个网页的unload的时间戳，其它都为0</span>
+    unloadEventStart<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    unloadEventEnd<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 第一个HTTP重定向发生时的时间。有跳转且是同域名的重定向才算，否则值为0</span>
+    redirectStart<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    redirectEnd<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 浏览器准备好使用 http 请求抓取文档的时间，这发生在检查本地缓存之前</span>
+    fetchStart<span class="token operator">:</span> <span class="token number">1577341568993</span><span class="token punctuation">,</span>
+    <span class="token comment">// DNS 域名查询开始。如果使用了本地缓存(即无 DNS 查询)或持久连接，则与 fetchStart 值相等</span>
+    domainLookupStart<span class="token operator">:</span> <span class="token number">1577341568993</span><span class="token punctuation">,</span>
+    domainLookupEnd<span class="token operator">:</span> <span class="token number">1577341568993</span><span class="token punctuation">,</span>
+    <span class="token comment">// HTTP(TCP) 开始建立连接的时间，如果是持久连接，则与 fetchStart 相等</span>
+    connectStart<span class="token operator">:</span> <span class="token number">1577341568993</span><span class="token punctuation">,</span>
+    <span class="token comment">// 完成三次握手</span>
+    connectEnd<span class="token operator">:</span> <span class="token number">1577341568993</span><span class="token punctuation">,</span>
+    secureConnectionStart<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// HTTP 请求读取真实文档开始时间，包括从本地读取缓存</span>
+    requestStart<span class="token operator">:</span> <span class="token number">1577341568995</span><span class="token punctuation">,</span>
+    <span class="token comment">// HTTP 接收响应开始的时间，包括从本地读取缓存</span>
+    responseStart<span class="token operator">:</span> <span class="token number">1577341568996</span><span class="token punctuation">,</span>
+    responseEnd<span class="token operator">:</span> <span class="token number">1577341568998</span><span class="token punctuation">,</span>
+    <span class="token comment">// 开始解析渲染 DOM 树时间， 此时 document.readyState变为 loading ,并抛出 readystatechange 相关事件</span>
+    domLoading<span class="token operator">:</span> <span class="token number">1577341569004</span><span class="token punctuation">,</span>
+    <span class="token comment">// 完成解析 DOM 树, document.readyState 变为 interactive</span>
+    domInteractive<span class="token operator">:</span> <span class="token number">1577341569195</span><span class="token punctuation">,</span>
+    <span class="token comment">// domCotentLoaded事件抛出之前</span>
+    domContentLoadedEventStart<span class="token operator">:</span> <span class="token number">1577341569195</span><span class="token punctuation">,</span>
+    <span class="token comment">// domContentLoaded事件抛出之后</span>
+    domContentLoadedEventEnd<span class="token operator">:</span> <span class="token number">1577341569197</span><span class="token punctuation">,</span>
+    <span class="token comment">// document.readyState 状态变为 complete</span>
+    domComplete<span class="token operator">:</span> <span class="token number">1577341569205</span><span class="token punctuation">,</span>
+    <span class="token comment">// load 时间发送给文档，如果没有绑定load事件，值为0</span>
+    loadEventStart<span class="token operator">:</span> <span class="token number">1577341569205</span><span class="token punctuation">,</span>
+    <span class="token comment">// load 事件的回调函数执行完毕</span>
+    loadEventEnd<span class="token operator">:</span> <span class="token number">1577341569205</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>各类指标计算：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>times<span class="token punctuation">.</span>loadPage <span class="token operator">=</span> t<span class="token punctuation">.</span>loadEventEnd <span class="token operator">-</span> t<span class="token punctuation">.</span>navigationStart
+<span class="token comment">// 解析 DOM 结构</span>
+times<span class="token punctuation">.</span>domReady <span class="token operator">=</span> t<span class="token punctuation">.</span>domComplete <span class="token operator">-</span> t<span class="token punctuation">.</span>responseEnd
+<span class="token comment">//【重要】读取页面第一个字节的时间</span>
+<span class="token comment">//【原因】这可以理解为用户拿到你的资源占用的时间，加异地机房了么，加CDN 处理了么？加带宽了么？加 CPU 运算速度了么？</span>
+<span class="token comment">// TTFB 即 Time To First Byte 的意思</span>
+<span class="token comment">// 维基百科：https://en.wikipedia.org/wiki/Time_To_First_Byte</span>
+times<span class="token punctuation">.</span>ttfb <span class="token operator">=</span> t<span class="token punctuation">.</span>responseStart <span class="token operator">-</span> t<span class="token punctuation">.</span>navigationStart<span class="token punctuation">;</span>
+
+<span class="token comment">//【重要】内容加载完成的时间</span>
+<span class="token comment">//【原因】页面内容经过 gzip 压缩了么，静态资源 css/js 等压缩了么？</span>
+times<span class="token punctuation">.</span>request <span class="token operator">=</span> t<span class="token punctuation">.</span>responseEnd <span class="token operator">-</span> t<span class="token punctuation">.</span>requestStart<span class="token punctuation">;</span>
+
+<span class="token comment">//【重要】执行 onload 回调函数的时间</span>
+<span class="token comment">//【原因】是否太多不必要的操作都放到 onload 回调函数里执行了，考虑过延迟加载、按需加载的策略么？</span>
+times<span class="token punctuation">.</span>loadEvent <span class="token operator">=</span> t<span class="token punctuation">.</span>loadEventEnd <span class="token operator">-</span> t<span class="token punctuation">.</span>loadEventStart<span class="token punctuation">;</span>
+
+<span class="token comment">// DNS 缓存时间</span>
+times<span class="token punctuation">.</span>appcache <span class="token operator">=</span> t<span class="token punctuation">.</span>domainLookupStart <span class="token operator">-</span> t<span class="token punctuation">.</span>fetchStart<span class="token punctuation">;</span>
+
+<span class="token comment">// 卸载页面的时间</span>
+times<span class="token punctuation">.</span>unloadEvent <span class="token operator">=</span> t<span class="token punctuation">.</span>unloadEventEnd <span class="token operator">-</span> t<span class="token punctuation">.</span>unloadEventStart<span class="token punctuation">;</span>
+
+<span class="token comment">// TCP 建立连接完成握手的时间</span>
+times<span class="token punctuation">.</span>connect <span class="token operator">=</span> t<span class="token punctuation">.</span>connectEnd <span class="token operator">-</span> t<span class="token punctuation">.</span>connectStart<span class="token punctuation">;</span>
+</code></pre></div><p>🌟 points:</p> <ul><li>url解析中的DNS原理</li> <li>http和https协议</li> <li>浏览器缓存的判断和清理</li> <li>jquery的ready事件，window的load事件<code>DOMContentLoaded</code>事件的顺序</li> <li>浏览器渲染引擎机制</li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新于:</span> <span class="time">12/11/2020, 5:06:14 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/javascript/menu_04_window.html" class="prev">
+        浏览器对象
+      </a></span> <span class="next"><a href="/javascript/menu_06_browser_render.html">
+        浏览器渲染
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.dc2a0576.js" defer></script><script src="/assets/js/2.11d19bd3.js" defer></script><script src="/assets/js/44.86703b4b.js" defer></script>
+  </body>
+</html>

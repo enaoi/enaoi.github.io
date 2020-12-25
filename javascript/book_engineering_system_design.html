@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>前端工程化体系设计与实践 | enaoi&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="vue、react、webpack...，everything about front development.">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="preload" href="/assets/css/0.styles.14f0b62d.css" as="style"><link rel="preload" href="/assets/js/app.dc2a0576.js" as="script"><link rel="preload" href="/assets/js/2.11d19bd3.js" as="script"><link rel="preload" href="/assets/js/30.dba9760a.js" as="script"><link rel="prefetch" href="/assets/js/10.98c47988.js"><link rel="prefetch" href="/assets/js/11.d7c912d5.js"><link rel="prefetch" href="/assets/js/12.5baf646b.js"><link rel="prefetch" href="/assets/js/13.57e81f3e.js"><link rel="prefetch" href="/assets/js/14.e6de5925.js"><link rel="prefetch" href="/assets/js/15.d11de5dd.js"><link rel="prefetch" href="/assets/js/16.96516270.js"><link rel="prefetch" href="/assets/js/17.a3706a5a.js"><link rel="prefetch" href="/assets/js/18.8a7cbfdc.js"><link rel="prefetch" href="/assets/js/19.35b33062.js"><link rel="prefetch" href="/assets/js/20.a768ccec.js"><link rel="prefetch" href="/assets/js/21.de7c3de9.js"><link rel="prefetch" href="/assets/js/22.91ae7333.js"><link rel="prefetch" href="/assets/js/23.c195e0fd.js"><link rel="prefetch" href="/assets/js/24.f1a0be61.js"><link rel="prefetch" href="/assets/js/25.830768c8.js"><link rel="prefetch" href="/assets/js/26.ecdbaa22.js"><link rel="prefetch" href="/assets/js/27.c11eb401.js"><link rel="prefetch" href="/assets/js/28.e1d2ae6d.js"><link rel="prefetch" href="/assets/js/29.7dbe41bc.js"><link rel="prefetch" href="/assets/js/3.8bd42a0a.js"><link rel="prefetch" href="/assets/js/31.eb44f132.js"><link rel="prefetch" href="/assets/js/32.82188c4f.js"><link rel="prefetch" href="/assets/js/33.70bd62c4.js"><link rel="prefetch" href="/assets/js/34.e61aa4d5.js"><link rel="prefetch" href="/assets/js/35.88fc4055.js"><link rel="prefetch" href="/assets/js/36.1f27c2c8.js"><link rel="prefetch" href="/assets/js/37.bffcb782.js"><link rel="prefetch" href="/assets/js/38.2a3ce61c.js"><link rel="prefetch" href="/assets/js/39.82569ab4.js"><link rel="prefetch" href="/assets/js/4.a201f84c.js"><link rel="prefetch" href="/assets/js/40.610237f4.js"><link rel="prefetch" href="/assets/js/41.e4e5bd18.js"><link rel="prefetch" href="/assets/js/42.b68fb12b.js"><link rel="prefetch" href="/assets/js/43.e9a1fbf0.js"><link rel="prefetch" href="/assets/js/44.86703b4b.js"><link rel="prefetch" href="/assets/js/45.aca6880f.js"><link rel="prefetch" href="/assets/js/46.633acbd7.js"><link rel="prefetch" href="/assets/js/47.b29718ef.js"><link rel="prefetch" href="/assets/js/48.083797ae.js"><link rel="prefetch" href="/assets/js/49.3975f53b.js"><link rel="prefetch" href="/assets/js/5.8d87159a.js"><link rel="prefetch" href="/assets/js/50.e66ec424.js"><link rel="prefetch" href="/assets/js/51.3a322244.js"><link rel="prefetch" href="/assets/js/52.f2f66746.js"><link rel="prefetch" href="/assets/js/53.50f2084a.js"><link rel="prefetch" href="/assets/js/54.eed8c1a4.js"><link rel="prefetch" href="/assets/js/55.32fb1514.js"><link rel="prefetch" href="/assets/js/56.49cc5939.js"><link rel="prefetch" href="/assets/js/57.14c5862b.js"><link rel="prefetch" href="/assets/js/58.3406a0cd.js"><link rel="prefetch" href="/assets/js/59.e075b367.js"><link rel="prefetch" href="/assets/js/6.17ee8618.js"><link rel="prefetch" href="/assets/js/60.b948c23c.js"><link rel="prefetch" href="/assets/js/61.cb54f658.js"><link rel="prefetch" href="/assets/js/62.fe18928d.js"><link rel="prefetch" href="/assets/js/63.93d08160.js"><link rel="prefetch" href="/assets/js/64.a772b358.js"><link rel="prefetch" href="/assets/js/65.2a8f9764.js"><link rel="prefetch" href="/assets/js/66.848d69fd.js"><link rel="prefetch" href="/assets/js/67.eb9dfa5a.js"><link rel="prefetch" href="/assets/js/68.5e23b4a2.js"><link rel="prefetch" href="/assets/js/69.4ec0d823.js"><link rel="prefetch" href="/assets/js/7.c0ab16fe.js"><link rel="prefetch" href="/assets/js/70.9ed535aa.js"><link rel="prefetch" href="/assets/js/71.d4c96826.js"><link rel="prefetch" href="/assets/js/72.cadb8b3c.js"><link rel="prefetch" href="/assets/js/73.299cc5b8.js"><link rel="prefetch" href="/assets/js/74.57dc718f.js"><link rel="prefetch" href="/assets/js/75.b8b21f84.js"><link rel="prefetch" href="/assets/js/76.714894d7.js"><link rel="prefetch" href="/assets/js/77.beebd88c.js"><link rel="prefetch" href="/assets/js/78.23d6ade9.js"><link rel="prefetch" href="/assets/js/79.b2aef682.js"><link rel="prefetch" href="/assets/js/8.b476c428.js"><link rel="prefetch" href="/assets/js/80.ddc1dd90.js"><link rel="prefetch" href="/assets/js/9.05ba9cfe.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.14f0b62d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">enaoi's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link router-link-active">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/tools/" class="nav-link">
+  Tools
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="中级" class="dropdown-title"><span class="title">中级</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          MVVM框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/angular/" class="nav-link">
+  angular
+</a></li></ul></li><li class="dropdown-item"><h4>
+          扩展
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/typescript/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          打包工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-subitem"><a href="/vite/" class="nav-link">
+  vite
+</a></li></ul></li><li class="dropdown-item"><h4>
+          知识
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/http/" class="nav-link">
+  Http
+</a></li><li class="dropdown-subitem"><a href="/libs/" class="nav-link">
+  库
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="高级" class="dropdown-title"><span class="title">高级</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          后端服务
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/nodejs/" class="nav-link">
+  nodejs
+</a></li><li class="dropdown-subitem"><a href="/koa/" class="nav-link">
+  koa
+</a></li><li class="dropdown-subitem"><a href="/express.html" class="nav-link">
+  express
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据结构和算法
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/datastructures/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-subitem"><a href="/algorithm/" class="nav-link">
+  算法
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="阅读" class="dropdown-title"><span class="title">阅读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reading/" class="nav-link">
+  文学类
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/git/" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/vscode/" class="nav-link">
+  vscode
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/" class="nav-link">
+  计算机
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/enaoi" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link router-link-active">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/tools/" class="nav-link">
+  Tools
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="中级" class="dropdown-title"><span class="title">中级</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          MVVM框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/angular/" class="nav-link">
+  angular
+</a></li></ul></li><li class="dropdown-item"><h4>
+          扩展
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/typescript/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          打包工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-subitem"><a href="/vite/" class="nav-link">
+  vite
+</a></li></ul></li><li class="dropdown-item"><h4>
+          知识
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/http/" class="nav-link">
+  Http
+</a></li><li class="dropdown-subitem"><a href="/libs/" class="nav-link">
+  库
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="高级" class="dropdown-title"><span class="title">高级</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          后端服务
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/nodejs/" class="nav-link">
+  nodejs
+</a></li><li class="dropdown-subitem"><a href="/koa/" class="nav-link">
+  koa
+</a></li><li class="dropdown-subitem"><a href="/express.html" class="nav-link">
+  express
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据结构和算法
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/datastructures/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-subitem"><a href="/algorithm/" class="nav-link">
+  算法
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="阅读" class="dropdown-title"><span class="title">阅读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reading/" class="nav-link">
+  文学类
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/git/" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/vscode/" class="nav-link">
+  vscode
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/" class="nav-link">
+  计算机
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/enaoi" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/javascript/" aria-current="page" class="sidebar-link">目录</a></li><li><a href="/javascript/menu_01_basicDataType.html" class="sidebar-link">基础数据类型</a></li><li><a href="/javascript/menu_02_this.html" class="sidebar-link">执行上下文与 this</a></li><li><a href="/javascript/menu_03_regex.html" class="sidebar-link">正则表达式</a></li><li><a href="/javascript/menu_04_window.html" class="sidebar-link">浏览器对象</a></li><li><a href="/javascript/menu_05_resource_load.html" class="sidebar-link">浏览器资源加载</a></li><li><a href="/javascript/menu_06_browser_render.html" class="sidebar-link">浏览器渲染</a></li><li><a href="/javascript/menu_07_javascriptLoad.html" class="sidebar-link">网页解析和脚本执行时间线</a></li><li><a href="/javascript/menu_08_browser_event.html" class="sidebar-link">浏览器事件</a></li><li><a href="/javascript/menu_09_static_resource_update.html" class="sidebar-link">静态资源版本更新与缓存</a></li><li><a href="/javascript/menu_10_closure.html" class="sidebar-link">闭包</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="前端工程化体系设计与实践"><a href="#前端工程化体系设计与实践" class="header-anchor">#</a> 前端工程化体系设计与实践</h1> <h2 id="前端工程简史"><a href="#前端工程简史" class="header-anchor">#</a> 前端工程简史</h2> <p>👉<strong><mark>前端技能栈</mark></strong></p> <ul><li>用户体验
+<ul><li>性能优化策略</li> <li>浏览器渲染策略</li> <li>JavaScript 引擎工作原理</li></ul></li> <li>应用技能
+<ul><li>JavaScript
+<ul><li>编程能力</li> <li>抽象能力</li> <li>架构能力</li></ul></li> <li>CSS
+<ul><li>综合应用</li> <li>必要 hack 方案</li></ul></li> <li>HTML</li></ul></li> <li>核心技能
+<ul><li>数据结构</li> <li>算法</li> <li>软件工程</li></ul></li> <li>Node.js
+<ul><li>Web 应用基本架构模型</li> <li>HTTP 协议</li></ul></li></ul> <p>👉<strong><mark>SPA 单页应用</mark></strong></p> <p>优点</p> <ul><li>减轻了服务器资源消耗</li> <li>与 HTML 文档比起来，JSON 数据的体积也小很多，减少了网络请求的时间消耗</li> <li>页面路由控制更加灵活</li> <li>可以离线使用</li></ul> <p>缺点</p> <ul><li>浏览器需要等待 JavaScript 文件加载完成后才可以渲染后续的 HTML 文档，产生白屏时间。</li> <li>前后端之间需协调：如 history 路由问题</li> <li>不利于 SEO 搜索引擎优化</li></ul> <p>👉<strong><mark>前后端分离</mark></strong></p> <ul><li>开发
+<ul><li>基于 nodejs 中间层，前端 mock 数据</li></ul></li> <li>测试
+<ul><li>前后端测试互不影响，联合测试需要专业测试人员</li> <li>前端还应该管控生产环境下的质量管控问题，制定客户端监控系统，收集客户端问题并及时预警。</li></ul></li> <li>部署
+<ul><li>方案一：静态资源部署到静态资源文件服务器上，HTML 模版和中间层 Node.js 一起部署到 Web 服务器</li> <li>方案二：SPA 的理论上可以和静态资源一起部署到静态文件服务器上，但是需要处理 HTML 缓存的问题。如果 HTML 文件被浏览器强制缓存到本地，那么开发人员即使更新了 HTML 文件，也无法获取到最新资源。
+<ul><li>解决方案一：分别为 HTML 资源和其它资源分配不同的缓存策略。HTML 资源使用协商缓存（304），其它资源使用强缓存（200 from cache）</li> <li>解决方案二：所有静态资源都采取协商缓存(不如第一种策略)</li></ul></li></ul></li></ul> <p>👉<strong><mark>前端工程化</mark></strong></p> <blockquote><p>前端工程化是一系列工具和规范的组合。</p></blockquote> <p>前端工程化的三个阶段：</p> <ol><li>本地工具链</li> <li>管理平台</li> <li>持续集成</li></ol> <p><strong>本地工具链</strong>:</p> <ul><li>开发层面（引入动态构建流程）
+<ul><li>ES 规范与浏览器兼容性不一致</li> <li>CSS 的弱编程能力</li> <li>资源定位</li> <li>图片压缩/base64 内嵌/CSS Sprites</li> <li>模块依赖分析和压缩打包</li></ul></li> <li>协作层面（mock 服务）
+<ul><li>JavaScript 部分逻辑依赖接口 API</li></ul></li> <li>部署层面（静态资源和动态资源分离部署）
+<ul><li>部分资源需要借助后端工程师部署</li></ul></li></ul> <p>工程化并不是工具化。其中规范包括</p> <ul><li>项目文件的组织结构</li> <li>源代码的开发范式</li> <li>工具的使用规范，比如 git 分支管理</li> <li>各阶段环境的依赖。</li></ul> <p><strong>管理平台</strong>:</p> <ul><li>淡化环境差异性</li> <li>权限其中管理，提高安全性</li> <li>项目版本集中控制，便于危机处理，比如版本回滚等</li></ul> <p><strong>持续集成</strong>:</p> <p>前端工程化只是整个 Web 工作流的一个子集方案。前端工程化必然是整体工作流，和后端服务必然需要配合。</p> <h2 id="脚手架"><a href="#脚手架" class="header-anchor">#</a> 脚手架</h2> <blockquote><p>脚手架的功能是创建项目初始化文件，本质是方案的封装</p></blockquote> <p>优秀的脚手架原则</p> <ul><li>功能角度
+<ul><li>与构建、开发、部署等功能模块联动，在创建项目时生成对应的配置项</li> <li>自动安装以来模块</li></ul></li> <li>平台角度
+<ul><li>动态可配置</li> <li>底层高度可扩展</li></ul></li> <li>易用性角度
+<ul><li>丰富但不繁琐的配置</li> <li>支持多种运行环境</li> <li>兼容主流操作系统</li></ul></li></ul> <h2 id="构建"><a href="#构建" class="header-anchor">#</a> 构建</h2> <blockquote><p>将源代码转化为宿主浏览器可执行的代码，其核心是资源管理。</p></blockquote> <p>前端的产出资源包括 JS、CSS、HTML 等，分别对应的源代码则是：</p> <ul><li>浏览器无法兼容的高版本 ECMAScript 规范的 JS 脚本 ---&gt; ECMAScript 规范转义为兼容到浏览器某个版本</li> <li>LESS/SASS 预编译语法编写的 CSS 文件 ---&gt; CSS 预编译语法转义为普通 CSS 文件</li> <li>其它模版语法编写的 HTML 代码 ---&gt; HTML 模版解析和渲染</li></ul> <p>除了资源本身，构建工具还考虑到 Web 应用的性能和用户体验等因素。</p> <ul><li>依赖打包：分析文件依赖打包，将同步依赖的文件打包在一起，减少 HTTP 请求数量</li> <li>资源嵌入：比如小于 10KB 的图片编译为 base64 格式嵌入文档，减少 HTTP 请求</li> <li>文件压缩：减少文件体积，缩短请求时间</li> <li>hash 指纹：通过给文件名加入 hash 指纹，应对浏览器缓存问题</li></ul> <p>HTML 和 JS、CSS 文件和图片资源等是引用和被引用的关系。被引用资源经过构建后通常有以下改动。</p> <ul><li>域名/路径改变</li> <li>文件名改变：加了 hash 指纹等</li></ul> <p>所以构建工具还要解决</p> <ul><li>资源定位</li></ul> <p>👉<strong><mark>结合 Webpack 与 Babel 实现 JavaScript 构建</mark></strong></p> <ul><li><code>babel-preset-dev</code></li></ul> <p><code>babel-loader</code>是官方提供的 webpack 插件。典型配置方案：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+  module<span class="token operator">:</span> <span class="token punctuation">{</span>
+    rules<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+      test<span class="token operator">:</span><span class="token regex">/.js$/</span><span class="token punctuation">,</span>
+      exclude<span class="token operator">:</span> <span class="token regex">/(node_modules|browser_components)/</span><span class="token punctuation">,</span>
+      use<span class="token operator">:</span> <span class="token punctuation">[</span>
+        loader<span class="token operator">:</span> <span class="token string">'babel-loader'</span><span class="token punctuation">,</span>
+        options<span class="token operator">:</span><span class="token punctuation">{</span>
+          presets<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'es2015'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          plugins<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'babel-plugin-transform-object-rest-spread'</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>上面的 presets 插件，是一个典型使用 babel 插件编译 ES2015 规范的配置，<code>babel-preset-es2015</code>插件是一个集合，包含了将 ES6 转化为 ES5 的所有语法。而 <code>babel-preset-env</code>插件则是指定需要兼容目标浏览器的版本，就会根据官方的兼容信息组合需要的 babel 插件，并最终将源代码编译为目标浏览器兼容的语法。</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+  presets<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">[</span>
+    <span class="token string">&quot;env&quot;</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token punctuation">{</span>
+      targets<span class="token operator">:</span><span class="token punctuation">{</span>
+        <span class="token string">&quot;chrome&quot;</span><span class="token operator">:</span> <span class="token number">59</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;modules&quot;</span><span class="token operator">:</span><span class="token boolean">false</span> <span class="token comment">// 禁用 babel-preset-env 的模块化规范转化</span>
+        <span class="token comment">// 比如AMD，COMMONJS默认转化为COMMONJS</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+</code></pre></div><p>或者是浏览器的最新 2 个版本以及 IE8+</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>targets<span class="token operator">:</span><span class="token punctuation">{</span>
+  <span class="token string">&quot;browsers&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;last 2 versions&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;ie&gt;=8&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>或者是市场占有份额</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>targets<span class="token operator">:</span><span class="token punctuation">{</span>
+  <span class="token string">&quot;browsers&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&gt;= 5%&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li><code>.babelrc</code></li></ul> <p>使用<code>babel-loader</code>在 webpack 中进行 options 配置有一个缺陷：编译只符合 test 规则的文件。有些特殊业务框架编写的源代码需要将 script 标签内部的代码使用 Vue 编译。需要使用<code>.babelrc</code>编写配置。</p> <p>👉<strong><mark>CSS 预编译与 PostCSS</mark></strong></p> <p>CSS 预编译器：</p> <ol><li>增强编程能力</li> <li>增强源代码可复用性</li> <li>增强源代码可维护性</li> <li>便于解决浏览器兼容性</li></ol> <p>不同编译器特性不同，但核心目标为以下几点：</p> <ul><li>嵌套</li> <li>变量：源码可编程能力</li> <li>mixin/继承：hack 和代码复用</li> <li>运算：源码可编程能力</li> <li>模块化：源码复用和可维护</li></ul> <p>PostCSS</p> <ul><li>PostCSS 主要解决兼容浏览器版本，比如 autoprefix、自动 CSS Sprites 等</li> <li>CSS 预编译器弥补 CSS 源码的弱编程能力</li></ul> <p>👉<strong><mark>模块化开发</mark></strong></p> <p>为什么使用模块化开发?</p> <ul><li>避免命名冲突</li> <li>便于依赖管理：浏览器解析文件是按照由上到下的顺序解析，两个依赖关系的 JS 必须保证加载顺序。</li> <li>利于性能优化：配合模块化的按需加载功能更便利。并且构建工具将同步模块进行合并打包，减少客户端请求。treeShaking 减少了冗余代码的数量。</li> <li>提高可维护性</li> <li>利于代码复用</li></ul> <p>前端模块发展史</p> <ol><li>CommonJS<br>
+被 nodejs 采用为默认模块化规范,并不适合浏览器环境：
+<ul><li>浏览器环境的前端资源不仅仅包括 JavaScript，还包括 CSS、图片等。CommonJS 无法处理 JavaScript 以外的资源</li> <li>CommmonJS 所有模块都采用同步阻塞式加载，无法实现按需异步加载。</li></ul></li> <li>AMD/CMD<br>
+两个规范有所不同，但是核心功能是统一的。在 CommonJS 基础上，AMD/CMD 扩展了以下功能：
+<ul><li>可以处理 JavaScript 以外的资源</li> <li>资源无须编译便可在浏览器下运行</li> <li>按需异步加载，并行加载</li> <li>插件系统<br>
+但也是一种折中方案：</li> <li>模块无法跨环境运行</li> <li>构建工具不统一</li> <li>不同模块规范之间不可复用</li></ul></li> <li>ES6 Module<br>
+Babel 和 webpack 都已经实现对 import 函数的支持。</li></ol> <p>webpack 模块化构建</p> <div class="custom-block warning"><p class="custom-block-title">待完善</p> <p>webpack 对 ES6 Modules 的异步模块支持功能</p></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新于:</span> <span class="time">12/25/2020, 2:30:14 PM</span></div></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.dc2a0576.js" defer></script><script src="/assets/js/2.11d19bd3.js" defer></script><script src="/assets/js/30.dba9760a.js" defer></script>
+  </body>
+</html>

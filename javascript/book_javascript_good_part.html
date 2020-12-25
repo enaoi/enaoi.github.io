@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript 精粹语法 | enaoi&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="vue、react、webpack...，everything about front development.">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="preload" href="/assets/css/0.styles.14f0b62d.css" as="style"><link rel="preload" href="/assets/js/app.dc2a0576.js" as="script"><link rel="preload" href="/assets/js/2.11d19bd3.js" as="script"><link rel="preload" href="/assets/js/32.82188c4f.js" as="script"><link rel="prefetch" href="/assets/js/10.98c47988.js"><link rel="prefetch" href="/assets/js/11.d7c912d5.js"><link rel="prefetch" href="/assets/js/12.5baf646b.js"><link rel="prefetch" href="/assets/js/13.57e81f3e.js"><link rel="prefetch" href="/assets/js/14.e6de5925.js"><link rel="prefetch" href="/assets/js/15.d11de5dd.js"><link rel="prefetch" href="/assets/js/16.96516270.js"><link rel="prefetch" href="/assets/js/17.a3706a5a.js"><link rel="prefetch" href="/assets/js/18.8a7cbfdc.js"><link rel="prefetch" href="/assets/js/19.35b33062.js"><link rel="prefetch" href="/assets/js/20.a768ccec.js"><link rel="prefetch" href="/assets/js/21.de7c3de9.js"><link rel="prefetch" href="/assets/js/22.91ae7333.js"><link rel="prefetch" href="/assets/js/23.c195e0fd.js"><link rel="prefetch" href="/assets/js/24.f1a0be61.js"><link rel="prefetch" href="/assets/js/25.830768c8.js"><link rel="prefetch" href="/assets/js/26.ecdbaa22.js"><link rel="prefetch" href="/assets/js/27.c11eb401.js"><link rel="prefetch" href="/assets/js/28.e1d2ae6d.js"><link rel="prefetch" href="/assets/js/29.7dbe41bc.js"><link rel="prefetch" href="/assets/js/3.8bd42a0a.js"><link rel="prefetch" href="/assets/js/30.dba9760a.js"><link rel="prefetch" href="/assets/js/31.eb44f132.js"><link rel="prefetch" href="/assets/js/33.70bd62c4.js"><link rel="prefetch" href="/assets/js/34.e61aa4d5.js"><link rel="prefetch" href="/assets/js/35.88fc4055.js"><link rel="prefetch" href="/assets/js/36.1f27c2c8.js"><link rel="prefetch" href="/assets/js/37.bffcb782.js"><link rel="prefetch" href="/assets/js/38.2a3ce61c.js"><link rel="prefetch" href="/assets/js/39.82569ab4.js"><link rel="prefetch" href="/assets/js/4.a201f84c.js"><link rel="prefetch" href="/assets/js/40.610237f4.js"><link rel="prefetch" href="/assets/js/41.e4e5bd18.js"><link rel="prefetch" href="/assets/js/42.b68fb12b.js"><link rel="prefetch" href="/assets/js/43.e9a1fbf0.js"><link rel="prefetch" href="/assets/js/44.86703b4b.js"><link rel="prefetch" href="/assets/js/45.aca6880f.js"><link rel="prefetch" href="/assets/js/46.633acbd7.js"><link rel="prefetch" href="/assets/js/47.b29718ef.js"><link rel="prefetch" href="/assets/js/48.083797ae.js"><link rel="prefetch" href="/assets/js/49.3975f53b.js"><link rel="prefetch" href="/assets/js/5.8d87159a.js"><link rel="prefetch" href="/assets/js/50.e66ec424.js"><link rel="prefetch" href="/assets/js/51.3a322244.js"><link rel="prefetch" href="/assets/js/52.f2f66746.js"><link rel="prefetch" href="/assets/js/53.50f2084a.js"><link rel="prefetch" href="/assets/js/54.eed8c1a4.js"><link rel="prefetch" href="/assets/js/55.32fb1514.js"><link rel="prefetch" href="/assets/js/56.49cc5939.js"><link rel="prefetch" href="/assets/js/57.14c5862b.js"><link rel="prefetch" href="/assets/js/58.3406a0cd.js"><link rel="prefetch" href="/assets/js/59.e075b367.js"><link rel="prefetch" href="/assets/js/6.17ee8618.js"><link rel="prefetch" href="/assets/js/60.b948c23c.js"><link rel="prefetch" href="/assets/js/61.cb54f658.js"><link rel="prefetch" href="/assets/js/62.fe18928d.js"><link rel="prefetch" href="/assets/js/63.93d08160.js"><link rel="prefetch" href="/assets/js/64.a772b358.js"><link rel="prefetch" href="/assets/js/65.2a8f9764.js"><link rel="prefetch" href="/assets/js/66.848d69fd.js"><link rel="prefetch" href="/assets/js/67.eb9dfa5a.js"><link rel="prefetch" href="/assets/js/68.5e23b4a2.js"><link rel="prefetch" href="/assets/js/69.4ec0d823.js"><link rel="prefetch" href="/assets/js/7.c0ab16fe.js"><link rel="prefetch" href="/assets/js/70.9ed535aa.js"><link rel="prefetch" href="/assets/js/71.d4c96826.js"><link rel="prefetch" href="/assets/js/72.cadb8b3c.js"><link rel="prefetch" href="/assets/js/73.299cc5b8.js"><link rel="prefetch" href="/assets/js/74.57dc718f.js"><link rel="prefetch" href="/assets/js/75.b8b21f84.js"><link rel="prefetch" href="/assets/js/76.714894d7.js"><link rel="prefetch" href="/assets/js/77.beebd88c.js"><link rel="prefetch" href="/assets/js/78.23d6ade9.js"><link rel="prefetch" href="/assets/js/79.b2aef682.js"><link rel="prefetch" href="/assets/js/8.b476c428.js"><link rel="prefetch" href="/assets/js/80.ddc1dd90.js"><link rel="prefetch" href="/assets/js/9.05ba9cfe.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.14f0b62d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">enaoi's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link router-link-active">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/tools/" class="nav-link">
+  Tools
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="中级" class="dropdown-title"><span class="title">中级</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          MVVM框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/angular/" class="nav-link">
+  angular
+</a></li></ul></li><li class="dropdown-item"><h4>
+          扩展
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/typescript/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          打包工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-subitem"><a href="/vite/" class="nav-link">
+  vite
+</a></li></ul></li><li class="dropdown-item"><h4>
+          知识
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/http/" class="nav-link">
+  Http
+</a></li><li class="dropdown-subitem"><a href="/libs/" class="nav-link">
+  库
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="高级" class="dropdown-title"><span class="title">高级</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          后端服务
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/nodejs/" class="nav-link">
+  nodejs
+</a></li><li class="dropdown-subitem"><a href="/koa/" class="nav-link">
+  koa
+</a></li><li class="dropdown-subitem"><a href="/express.html" class="nav-link">
+  express
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据结构和算法
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/datastructures/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-subitem"><a href="/algorithm/" class="nav-link">
+  算法
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="阅读" class="dropdown-title"><span class="title">阅读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reading/" class="nav-link">
+  文学类
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/git/" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/vscode/" class="nav-link">
+  vscode
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/" class="nav-link">
+  计算机
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/enaoi" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/" class="nav-link router-link-active">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/tools/" class="nav-link">
+  Tools
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="中级" class="dropdown-title"><span class="title">中级</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          MVVM框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/angular/" class="nav-link">
+  angular
+</a></li></ul></li><li class="dropdown-item"><h4>
+          扩展
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/typescript/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          打包工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-subitem"><a href="/vite/" class="nav-link">
+  vite
+</a></li></ul></li><li class="dropdown-item"><h4>
+          知识
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/http/" class="nav-link">
+  Http
+</a></li><li class="dropdown-subitem"><a href="/libs/" class="nav-link">
+  库
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="高级" class="dropdown-title"><span class="title">高级</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          后端服务
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/nodejs/" class="nav-link">
+  nodejs
+</a></li><li class="dropdown-subitem"><a href="/koa/" class="nav-link">
+  koa
+</a></li><li class="dropdown-subitem"><a href="/express.html" class="nav-link">
+  express
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据结构和算法
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/datastructures/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-subitem"><a href="/algorithm/" class="nav-link">
+  算法
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="阅读" class="dropdown-title"><span class="title">阅读</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reading/" class="nav-link">
+  文学类
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/git/" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/vscode/" class="nav-link">
+  vscode
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其它
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/computer/" class="nav-link">
+  计算机
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/enaoi" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/javascript/" aria-current="page" class="sidebar-link">目录</a></li><li><a href="/javascript/menu_01_basicDataType.html" class="sidebar-link">基础数据类型</a></li><li><a href="/javascript/menu_02_this.html" class="sidebar-link">执行上下文与 this</a></li><li><a href="/javascript/menu_03_regex.html" class="sidebar-link">正则表达式</a></li><li><a href="/javascript/menu_04_window.html" class="sidebar-link">浏览器对象</a></li><li><a href="/javascript/menu_05_resource_load.html" class="sidebar-link">浏览器资源加载</a></li><li><a href="/javascript/menu_06_browser_render.html" class="sidebar-link">浏览器渲染</a></li><li><a href="/javascript/menu_07_javascriptLoad.html" class="sidebar-link">网页解析和脚本执行时间线</a></li><li><a href="/javascript/menu_08_browser_event.html" class="sidebar-link">浏览器事件</a></li><li><a href="/javascript/menu_09_static_resource_update.html" class="sidebar-link">静态资源版本更新与缓存</a></li><li><a href="/javascript/menu_10_closure.html" class="sidebar-link">闭包</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="javascript-精粹语法"><a href="#javascript-精粹语法" class="header-anchor">#</a> JavaScript 精粹语法</h1> <h2 id="basic"><a href="#basic" class="header-anchor">#</a> Basic</h2> <p><strong>注释:</strong> 应该使用//，避免使用/**/，因为正则表达式内可能也包含，导致注释错误。</p> <p><strong>保留字:</strong> 如 new、if、this等。但注意undefined、NaN、Infinity不在该范围内，所以对他们进行赋值操作不会报错。</p> <p><strong>标志符:</strong> 不包括保留字。应该以字符、下划线和美元符开头的一个或多个字母、数字或下划线组成。</p> <p><strong>数字:</strong> javascript 只有一个数字类型。内部被表示为64位浮点数。特殊的没有分离出整数部分，所以1和1.0的值相同。</p> <ul><li>NaN 是一个数值，NaN 不等于任何值，包括它自己，可以用函数isNaN(number)来检测。</li> <li>javascript 内置了一个Math对象，有一套作用于数字的方法。</li></ul> <p><strong>字符串:</strong> javascript 创建的时候，unicode 是一个16位的字符集，所以 javascript 中的字符都是16位的。</p> <ul><li>字符串是不可变的，一旦创建，就无法改变它。但可以通过 + 运算连接其它字符串，创建一个新的字符串。</li> <li>包含两个完全相同的字符，且字符顺序也相同的字符串被认为是相同的字符串。</li></ul> <p><strong>语句:</strong> 一个编译单元包含一组执行语句。</p> <p><strong>代码块:</strong> 包含在一对花括号中。原先的代码块不会创建新的作用域，但是 ES6 的 let 和 const 则会在代码块内产生作用域。</p> <p><strong>表达式:</strong> 最简单的表达式是字面量值，变量，内置的值，以new开头的调用表达式、以delete开头的属性提取表达式...</p> <p><strong>字面量:</strong> 简单创建指定规则类型的表示法。</p> <h2 id="对象"><a href="#对象" class="header-anchor">#</a> 对象</h2> <p><strong>原型:</strong> 每个对象都从原型继承属性。每个对象都连接到 Object.prototype, 没有原型的对象不多，Object.prototype就是为数不多的之一，该对象的原型为null。</p> <ul><li>ES5可以使用<code>Object.getPrototypeOf(instance)</code>获得 <code>prototype</code> 对象</li> <li>当我们为一个对象添加属性时，这个属性就会屏蔽原型对象中的同名属性。
+<strong>原型链:</strong> 假如查询对象o的属性x，如果o中不存在x，那么将会继续在o的原型对象中查询属性x。直到找到属性x或者原型是null的对象为止。可以看到对象的原型构成了一个&quot;链&quot;，通过这个链可以实现属性的继承。</li></ul> <h2 id="函数"><a href="#函数" class="header-anchor">#</a> 函数</h2> <p><strong>原型:</strong> 函数对象连接到 Function.prototype 对象，该对象再连接到 Object.prototype</p> <ul><li>每个函数创建时，都有两个隐藏属性：函数上下文和实现函数的行为的代码。，也产生一个prototype属性。它的值拥有一个 constructor 属性，且值为该函数的对象。</li> <li>函数与其它对象不同之处，在于它可以被调用。</li> <li>调用一个函数会暂停当前函数的执行，传递控制权和参数给新函数。除了定义时申明的形参，函数还有两个附加参数: this和arguments。
+<ul><li>this 在面向对象编程中非常重要，它的值取决于调用的上下文。</li> <li>方法调用：绑定到该对象。</li> <li>函数调用：this绑定到全局对象。</li> <li>构造器调用：使用关键字new来调用构造函数。调用构造函数的一个重要特征是，构造函数的prototype属性被用作新对象的原型。获取这个属性可以用[[Prototype]],某些浏览器中为 <strong>proto</strong></li> <li><code>call()</code>和<code>apply()</code>：call()和apply()的第一个实参是要调用函数的母对象，它是调用上下文，在函数体内通过this来获得对它的引用。想以对象o的方法来调用函数f(),可以这样使用call()和apply()。关于bind()，它是返回一个新的函数。具体实现内部原理，后面会有代码实现。ES5中，bind()不紧是将函数绑定至一个对象，它还附带一些其它的应用：除了第一个实参外，传入bind()的实参也会绑定至this，这个附带的应用是一种常见的函数式编程技术，有时也被称为“柯里化”。</li> <li>arguments: arguments是一个类似数组的对象。拥有一个length 属性，但不具有数组的任何方法。</li></ul></li></ul> <p>函数申明被提前到外部脚本或者是外部函数的作用域顶部。函数申明语句并非真正的语句，ECMAScript 规范只允许它们做为顶级语句。比 var 先提升。但表达式定义的函数不会提前。在定义前无法调用的。</p> <p>return 语句导致函数会停止执行。并返回表达式给调用者，没有指定值，则返回 undefined。构造函数调用时，如果返回值不是一个对象，那么返回this。</p> <p>嵌套函数：</p> <ul><li>被嵌套函数可以访问嵌套他们的函数的参数和变量。</li> <li>嵌套函数不会从调用它的函数中继承 this。</li></ul> <p><strong>方法链:</strong> 当方法不需要返回值的时候，最好直接返回 this。如果一直在 API 开发中使用，这个 API 就可以进行链式调用。
+<strong>作用域链:</strong> 每次调用函数的时候，都会为之创建一个新的对象来保存局部变量，把这个对象添加至作用域链中。当函数返回的时候，就从作用域链中将这个绑定变量的对象删除。如果不存在嵌套的函数，也不存在其它引用指向这个绑定对象，就会被当作垃圾回收掉。如果定义了嵌套函数，每个嵌套函数都各自对应一个作用域链，并且这个作用域链指向一个变量绑定对象。但如果这些嵌套的函数对象在外部函数中保存下来了，那么他们也会和所指向的变量绑定对象一样当作垃圾回收。但如果这个函数定义了嵌套函数，并将它做为返回值返回，或者存储在某处的属性里，这时就会有一个外部引用指向这个嵌套函数。它就不会被当作垃圾回收，并且它所指向的变量绑定对象也不会被当做垃圾回收。</p> <p><strong>纯函数:</strong>
+- 返回的结果只依赖它本身的arguments，输入相同的arguments永远得到相同的结果.
+- 所以Math.random()应该不算纯函数
+- 不会有调用任何网络交互
+- 不会修改传递给他们的参数
+<strong>异常:</strong> throw 语句中断函数执行。它应该抛出一个 exception 对象，包含 name 和 message 属性。
+<strong>递归:</strong> 直接或间接的调用自身的一种函数。
+<strong>作用域:</strong> javascript只有函数作用域，但块级作用域并不全面。比如var定义的变量总是全局的。
+<strong>闭包:</strong> 内部函数可以访问外部还输的参数和变量，除了this和arguments。内部函数拥有比外部函数更长的生命周期。
+<strong>回调:</strong> 传递一个函数，异步操作。
+<strong>模块:</strong> 模块利用了函数作用域和闭包来创建一般配合单例模式使用。
+<strong>级联:</strong> 方法返回this。
+<strong>科里化:</strong> 函数和参数相结合，产出一个新的函数。
+<strong>记忆:</strong>  缓存曾经的结果。memoizer。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新于:</span> <span class="time">12/18/2020, 11:48:26 AM</span></div></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.dc2a0576.js" defer></script><script src="/assets/js/2.11d19bd3.js" defer></script><script src="/assets/js/32.82188c4f.js" defer></script>
+  </body>
+</html>
